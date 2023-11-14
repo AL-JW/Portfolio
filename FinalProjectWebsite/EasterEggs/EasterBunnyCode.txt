@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Easter HomePage</title>
+	
+<style> 
+	
+	
+	ul {
+		
+		text-align: center;
+		
+	}
+	
+	
+	img {
+		
+		border-style: solid;
+		border-color: green;
+	}
+
+	
+	header {
+		font-size: 200%;
+		border-style: solid;
+		border-color:aqua;
+	}
+	
+	
+	
+	
+	body {
+		
+		background-color: lightpink;
+		text-align: center;
+		
+	}
+	
+	
+	
+body,td,th {
+	color: #AD181A;
+}
+</style>	
+	
+
+</head>
+
+<body>
+	
+<header><strong>EASTER and BUNNIES</strong></header>
+	
+	
+	
+	<ul>
+		<li><a href="Index.html" target="_blank">EasterHomePage </a></li>
+	<br><li><a href="Page2.html">Holland Lop</a></li>
+	<br><li><a href="Page3.html">American Rabbit</a></li>
+	<br><li><a href="Page4.html" target="_blank">Tan Rabbit</a></li>
+	<br><li><a href="Page5.html" target="_blank">English Angora Rabbit</a></li>
+	
+	</ul>
+	
+	<p>These are links to different types of bunnies. </p>
+	
+	<br>
+	<br>
+	
+	<h1>What is Easter and The<a href="https://www.smithsonianmag.com/history/the-ancient-origins-of-the-easter-bunny-180979915/" target="_blank"> Easter Bunny</a>?</h1>
+	
+<p> Easter is a holiday commemorating the resurrection of Jesus Christ. Easter is viewed as the origin of Christianity and as the religion's biggest holiday. <span style="color: #01B18E">The Easter Bunny and eggs are common symbols for the holidays as well, but they have religious roots.</span> The Easter bunny is a much-celebrated character in American Easter celebrations. On Easter Sunday, children look for hidden special treats, often chocolate Easter eggs, that the Easter bunny might have left behind. </p>
+	
+<img src="../DreamWeaver/BunnyWithEgg.JPG" width="309" height="328" alt=""/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>English Angora Rabbit</title>
+</head>
+
+<body>
+</body>
+</html>
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Holland Lop</title>
+
+<style> 
+
+	
+	
+	ul {
+		
+		text-align: center;
+		
+	}
+	
+	
+	img {
+		
+		border-style: solid;
+		border-color: green;
+	}
+	
+	
+	header {
+		font-size: 200%;
+		border-style: solid;
+		border-color:aqua;
+	}
+	
+	
+	body {
+	background-color: #E778AB;
+	text-align: center;
+	}
+	
+	
+	
+</style>	
+	
+	
+</head>
+
+<body>
+	
+<header><strong>EASTER and BUNNIES</strong></header>
+	
+	<ul>
+		<li><a href="Index.html" target="_blank">EasterHomePage </a></li>
+	<br><li><a href="Page2.html">Holland Lop</a></li>
+	<br><li><a href="Page3.html">American Rabbit</a></li>
+	<br><li><a href="Page4.html" target="_blank">Tan Rabbit</a></li>
+	<br><li><a href="Page5.html" target="_blank">English Angora Rabbit</a></li>
+	
+	</ul>
+	
+<h2> Holland <span style="color: #9B0608">Lop</span></h2>
+	
+<img src="../DreamWeaver/HollandLopBunny.JPG" width="724" height="479" alt=""/>
+	
+	
+<p style="font-size: x-large; font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif;"> This is a innocent looking grey bunny called a Holland Lop  </p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>American Rabbit</title>
+	
+<style> 
+	
+	
+	ul {
+		
+		text-align: center;
+		
+	}
+	
+	
+	img {
+		
+		border-style: solid;
+		border-color: green;
+	}
+	
+	
+	header {
+		font-size: 200%;
+		border-style: solid;
+		border-color:aqua;
+	}
+	
+
+	body {
+		
+		background-color: lightpink;
+		text-align: center;
+	}
+	
+</style>	
+		
+	
+	
+</head>
+
+<body>
+	
+<header><strong>EASTER and <em>BUNNIES</em></strong></header>
+	
+	<ul>
+		<li><a href="Index.html" target="_blank">EasterHomePage </a></li>
+	<br><li><a href="Page2.html">Holland Lop</a></li>
+	<br><li><a href="Page3.html">American Rabbit</a></li>
+	<br><li><a href="Page4.html" target="_blank">Tan Rabbit</a></li>
+	<br><li><a href="Page5.html" target="_blank">English Angora Rabbit</a></li>
+	
+	</ul>
+	
+<h2> American Rabbit</h2>
+	
+<img src="../DreamWeaver/AmericanRabbit.JPG" width="670" height="425" alt=""/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tan Rabbit</title>
+	
+<style> 
+	
+	
+	ul {
+		
+		text-align: center;
+		
+	}
+	
+	
+	
+	img {
+		
+		border-style: solid;
+		border-color: green;
+	}
+	
+	
+	header {
+		font-size: 200%;
+		border-style: solid;
+		border-color:aqua;
+	}
+	
+
+	body {
+		
+		background-color: lightpink;
+		text-align: center;
+	}
+	
+</style>	
+		
+	
+	
+	
+</head>
+
+<body>
+	
+	
+<header><strong>EASTER and BUNNIES</strong></header>
+	
+	<ul>
+		<li><a href="Index.html" target="_blank">EasterHomePage </a></li>
+	<br><li><a href="Page2.html">Holland Lop</a></li>
+	<br><li><a href="Page3.html">American Rabbit</a></li>
+	<br><li><a href="Page4.html" target="_blank">Tan Rabbit</a></li>
+	<br><li><a href="Page5.html" target="_blank">English Angora Rabbit</a></li>
+	
+	</ul>
+	
+	
+<h2> Tan Rabbit</h2>
+<img src="../DreamWeaver/TanRabbit.JPG" width="626" height="467" alt=""/>
+</body>
+</html>
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>English Angora Rabbit</title>
+	
+<style> 
+	
+	
+	ul {
+		
+		text-align: center;
+		
+	}
+	
+	
+	
+	img {
+		
+		border-style: solid;
+		border-color: green;
+	}
+	
+	
+	header {
+		font-size: 200%;
+		border-style: solid;
+		border-color:aqua;
+	}
+
+	body {
+		
+		background-color: lightpink;
+		text-align: center;
+	}
+	
+</style>	
+		
+	
+	
+	
+	
+</head>
+
+<body>
+	
+	<header><strong>EASTER and BUNNIES</strong></header>
+	
+	
+	<ul>
+		<li><a href="Index.html" target="_blank">EasterHomePage </a></li>
+	<br><li><a href="Page2.html">Holland Lop</a></li>
+	<br><li><a href="Page3.html">American Rabbit</a></li>
+	<br><li><a href="Page4.html" target="_blank">Tan Rabbit</a></li>
+	<br><li><a href="Page5.html" target="_blank">English Angora Rabbit</a></li>
+	
+	</ul>
+	
+	
+<h2> English Angora Rabbit:</h2>
+	
+	
+<img src="../DreamWeaver/AngoraRabbit.JPG" width="640" height="517" alt=""/>
+</body>
+</html>
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+.centerText {
+	margin-right: auto;
+}
+body {
+	background-color: #8C0002;
+}
+</style>
+</head>
+
+<body>
+<img src="../DreamWeaver/BunnyPic.JPG" alt="" width="470" height="264" usemap="#BunnyPic"/>
+<map name="BunnyPic">
+  <area shape="rect" coords="49,79,151,215" href="https://en.wikipedia.org/wiki/Easter">
+</map>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

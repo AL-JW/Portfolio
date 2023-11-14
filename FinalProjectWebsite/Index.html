@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Alexander Woynich</title>
+	
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">	
+	
+<link rel="stylesheet" type="text/css" href="IndexStyling.css"> <!--Link to external styling sheet -->
+
+</head>
+		
+<body>
+	 
+	
+
+<header>
+<div class = "headerClass">	
+	<h5 class = "headerFont"><strong><em>Alexander Woynich</em></strong></h5>	
+</div>
+</header>
+
+<br>
+	
+	
+	<!-- Add a button for the menu, I also really like this nav bar I made because the cool colors it emits with the gradient
+	styling effects (Index Styling 63) -->
+		
+		<div class="center-content">
+			<ul class = "navbar-ul">	
+				<li class="nav-list-item"><a href  = "Index.html" onclick="navigate(event, 'Index.html')">HomePage</a></li>  <!--Modified all the nav bar links with an onclick to call the javascript function when pressed-->
+				<li class="nav-list-item"><a href="AboutMePage.html" onclick="navigate(event, 'AboutMePage.html')">About Me</a></li>
+				<li class="nav-list-item"><a href="Hobbies.html" onclick="navigate(event, 'Hobbies.html')">Hobbies</a></li>
+				<li class="nav-list-item"><a href = "Resume.html" onclick="navigate(event, 'Resume.html')">Resume</a></li>
+				
+				<!--Line 83 of index styling-->
+				<li class="dropdown">
+					<a class="dropbtn">Portfolio</a>
+					<div class="dropdown-content">
+					
+					  <a href="AnakingSkyWalkerWebpage/index.html"> Anakin SkyWalker Webpage</a>
+					  <a href="AnakingSkyWalkerWebPage/AnakinCode.txt" target="_blank">View Code</a>
+					  <a href="GraduationPage/GraduationPage.html">Graduation Page</a> 
+					  <a href="GraduationPage/GraduationPageCode.txt">View Code</a>    
+					  <a href="EasterEggs/Index.html">Bunny Webpage</a>
+					  <a href="EasterEggs/EasterBunnyCode.txt">View Code</a> 
+					</div>
+				  </li>
+
+
+
+				<li class="nav-list-item"><a href = "ContactMe.html"onclick="navigate(event, 'Contactme.html')">Contact Me</a></li>	
+				<li class="nav-list-item"><a href = "Extras.html"onclick="navigate(event, 'Extras.html')">Extras</a></li>	
+				
+
+
+			</ul>	
+		</div>
+
+			<br>
+			<br>
+						
+			<img src="LinkedSnip.JPG" alt="" width="34%" height="228" class="centerImagePerson"/>
+	
+		<div class="intro-box">
+			<h2 class="contentToCenter">Hello there! Welcome to my Website!</h2>
+			<p class="contentToCenter">My name is Alex, I am an aspiring web designer and software developer. I am currently a student at UW-Stevens point studying Computer Information Systems. Please feel free to check out the rest of the site! </p>
+
+
+		</div>
+
+
+		<!--I really like adding these buttons to the webpage because you see them all the time on website and the internet.
+		I used a div to make use of the social links class (310 of index styling CSS) the div acts as a container for the buttons, and the the social-button class
+		styles the way the button itself looks!-->
+		
+		<div class="social-links">
+			<a href="https://www.youtube.com/channel/UCjsWoCce1r5YZROM-7JbGfQ" class="social-button">
+				<img class="social-button" src="YoutubeSymbol.JPG" alt "YouTube" width="50" height="50">
+			</a>
+
+			<a href="https://www.linkedin.com/in/alexander-woynich-334b2a217/" class="social-button">
+				<img class="social-button" src="LinkedInButton.JPG" alt "LinkedIn" width="50" height="50">
+			</a>
+
+			<a href="https://github.com/AL-JW" class="social-button">
+				<img class="social-button" src="GitHubSymbol.JPG" alt "YouTube" width="50" height="50">
+			</a>
+
+
+		</div>
+		
+	
+	
+	<div class="graduation-box">
+		<h2 >
+			Estimated time until graduation:
+		</h2>
+
+		<aside>
+			<h3  style="text-shadow: 2px 2px #816e03"> 2025 </h3>
+		</aside>
+
+		<!-- This calls the Javascript for the timer function-->
+		<p id="demo" class="countdown-timer-style"></p>  
+
+	</div>
+	
+
+
+	
+
+
+
+<script>
+
+	/*Function For the fade-out effect*/
+	function navigate(event, url) 
+	{
+		event.preventDefault();
+		document.body.classList.add('fade-out');
+		
+		
+		setTimeout(function() 
+		{
+			window.location.href = url;
+		}, 1000);
+	}	
+
+	/*JavaScript that is for the graduation countdown timer*/
+
+  // Set the date we're counting down to
+var countDownDate = new Date("May 15, 2025 15:37:25").getTime();
+
+  // Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+</script>
+
+<a href="Hobbies.html#codingColumn" class="center-content"  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;" >Check out some of my familar programming languages!</a>
+
+
+<footer>
+<div class="footer">
+	
+	<a href="Index.html" style="color: #d8d4d4">Alex Woynich Webpage</a>
+</div>
+</footer>
+
+
+</body>
+</html>

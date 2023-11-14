@@ -1,0 +1,12 @@
+Page 1: Index landing Home page 
+
+Page 2: Homepage called index with maybe a picture of myself and a biograhy. Maybe a tool bar with links to
+the other pages. basic demographics about self. 
+
+Page 3 : Hobbies and Interests. things That i enjoy to do outside of work. 
+
+Page 4. Resume. Us emy current resume and implement it into a template or something. 
+
+Page 5. Contact Me page. 
+
+

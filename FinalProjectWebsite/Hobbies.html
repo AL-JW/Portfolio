@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hobbies</title>
+</head>
+	
+<style>
+
+
+/*Trying to make it so this website works on mobile devices*/
+@media only screen and (max-width: 480px)
+{
+
+	body
+	{
+		padding-bottom: 40px;
+	}
+
+	.headerClass
+	{
+		font-size: 200%;
+		height: 80px;
+	}
+
+	.column, .column2, .column3
+	{
+
+		width: 100%;
+		margin: 10px 0;
+		
+	}
+
+}
+
+
+/*Fadeout transition to new page*/
+.fade-out
+	{
+		animation: fadeout 1s forwards;
+	}
+	
+	@keyframes fadeout
+	{
+		100%
+		{
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+/*End of Fadout transition CSS code*/	
+
+
+
+
+body
+	{
+			
+		background-color: #454444;
+	}
+
+
+
+.headerClass 
+	{
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100px;
+		width: 100%;
+		letter-spacing: 8px;
+		font-size: 300%;
+		line-height: 25px;
+		font-family: 'Lobster', cursive;
+		background-color: #000000;
+		border: solid thick;
+		border-color: green;
+		text-align: center;
+		padding: 20px;
+		color: aliceblue;
+		background-image: linear-gradient(45deg, rgba(0, 128, 0, 0.5), rgba(0, 0, 128, 0.5));
+	    background-color: black;
+	    animation-name: headerColorChange;
+	    animation-duration: 25s;
+		animation-iteration-count: infinite;
+		
+		/*This centers the text in the header*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	
+	@keyframes textclip 
+	{
+  		to 
+		{
+			background-position: 200% center;
+  		}
+	}	
+	
+	@keyframes headerColorChange 
+	{
+  		 0%   {background-color: black;}
+		 25%  {background-color: green;}
+		 50%  {background-color: black;}
+		 75%  {background-color: green;}
+		 100% {background-color: black;}
+		 animation-iteration-count: infinite;
+	}
+	
+	
+	
+	
+	li 
+	{
+
+	  display: inline-block;
+	  background-color:transparent;
+	  font-family: 'Crimson Text', serif;
+	  transition: background-color 0.3s, transform 0.3s;
+  
+	}
+
+	li a, .dropbtn 
+	{
+
+	  display: inline-block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  
+	  background-image: linear-gradient(to left, green, black, green, black, green);
+      background-size: 400% 100%;
+      background-position: 100% 0;
+      transition: background-position 0.5s;
+	  border: 5px solid black; /* Adds a thick black border */
+	  border-radius: 8px; /* adds curved corners */
+  
+	}
+	
+	
+	li a:hover, .dropdown:hover .dropbtn 
+	{
+		animation: colorLoop 4s linear infinite alternate;
+		background-position: 0% 0;
+		background-color: #4b9e46;
+		transform:scale(1.2);
+  
+	}
+	
+	
+	@keyframes colorLoop 
+	{
+		0% 
+		{
+			background-position: 100% 0;
+		}
+		
+		100% 
+		{
+			background-position: -100% 0;
+		}
+		
+		
+	}
+	
+
+
+	li.dropdown 
+	{
+
+ 		display: inline-block;
+  		color: white;
+  		padding: 14px 16px;
+  	}
+
+
+	.dropdown-content 
+	{
+
+	  display: none;
+	  position: absolute;  /* positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+  
+	}
+
+	.dropdown-content a 
+	{
+
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  background-color: green;
+	  display: inline-block;
+	  text-align: left;
+
+	}
+
+	.dropdown-content a:hover 
+	{ 
+
+		background-color: #6dde76;
+
+	}
+
+	.dropdown:hover .dropdown-content 
+	{
+		display: block;
+	}
+	
+	
+	ul 
+	{
+
+		display: inline-block;
+		list-style-type: none;				
+		margin: 0;
+		padding: 0;
+		font-size: 300%
+  
+	}	
+	
+	.center-content
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;	
+	}
+
+
+	/*3 columns */
+	.column, .column2, .column3 
+	{
+
+		display: inline-block;
+		width: 30%;
+		padding: 10px;
+		margin: 10px;
+		vertical-align: top;
+		box-sizing: border-box;
+
+
+
+		background-color: #6dde76;
+		border: 1px solid #ccc; 
+		padding: 20px;
+		margin: 20px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); /*This creates a small shadow effect to bake the intro box pop for me */
+		max-width: 600px; /*Sets the max with of the box*/
+		border-radius: 10px; /*This border radius allows the corners of the box to be curved*/
+		margin: 20px auto;   /*This centers the the box to the middle of the page, the auto keyword tells the code to make the horizontal space even, which in turn centers the box*/
+		text-align: center;		
+
+	}
+
+	.column2 ol li
+	{
+		display: list-item;
+	}
+
+	
+
+	/*end of 3 columns*/
+
+
+	/*This code adds the gradient underline effect when hovering over the list items in the nav bar*/
+
+	ul li a 
+	{
+  		display: inline-block;
+  		color: #ebebeb;
+  		text-decoration: none;
+  		position: relative;
+  		padding: 10px;
+  		transition: color 0.5s;
+	}
+
+	ul li a::after 
+	{
+  		content: "";
+  		position: absolute;
+  		width: 0%;
+  		height: 5px;
+  		bottom: 0;
+  		left: 0;
+  		background: linear-gradient(to right, red, orange);
+  		transition: width 0.3s;
+	}
+
+	ul li a:hover 
+	{
+  		color: #0091ea;
+	}
+
+	ul li a:hover::after 
+	{
+  		width: 100%;
+	}
+
+
+
+	/*Code for the drop down menu on portfollio */
+
+	li a:hover, .dropdown:hover .dropbtn {
+
+		background-color: red;
+		
+	  }
+	  
+	  
+	  li.dropdown {
+	  
+		display: inline-block;
+		color: white;
+		padding: 14px 16px;
+		
+	  }
+	  
+	  
+	  .dropdown-content {
+	  
+		display: none;
+		position: absolute;  /* positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
+		background-color: #f9f9f9;
+		min-width: 160px;
+		
+	  }
+	  
+	  .dropdown-content a {
+	  
+		padding: 14px 16px;
+		text-decoration: none;
+		background-color: green;
+		display: block;
+		text-align: left;
+		
+	  }
+	  
+	  .dropdown-content a:hover 
+	  {  /*pseudo-class selector for the hyperlinks in the navigation bar*/
+	  
+		  background-color: #6dde76;
+	  
+	  }
+	  
+	  .dropdown:hover .dropdown-content {
+	  
+		display: block;
+		
+	  }
+
+
+
+
+</style>
+
+<body>
+
+<div class = "headerClass">	
+	<h5 class = "headerFont"><strong><em>Hobbies</em></strong></h5>	
+</div>
+
+<br>
+	
+	
+	<!-- Add a button for the menu -->
+		
+		<div class="center-content">
+			<ul>	
+				<li class="nav-list-item"><a href  = "Index.html" onclick="navigate(event, 'Index.html')">HomePage</a></li>  <!--Modified all the nav bar links with an onclick to call the javascript function when pressed-->
+				<li class="nav-list-item"><a href="AboutMePage.html" onclick="navigate(event, 'AboutMePage.html')">About Me</a></li>
+				<li class="nav-list-item"><a href="Hobbies.html" onclick="navigate(event, 'Hobbies.html')">Hobbies</a></li>
+				<li class="nav-list-item"><a href = "Resume.html" onclick="navigate(event, 'Resume.html')">Resume</a></li>
+
+				<li class="dropdown">
+					<a class="dropbtn">Portfolio</a>
+					<div class="dropdown-content">
+					
+					  <a href="AnakingSkyWalkerWebpage/index.html"> Anakin SkyWalker Webpage</a>
+					  <a href="AnakingSkyWalkerWebPage/AnakinCode.txt" target="_blank">View Code</a>
+					  <a href="GraduationPage/GraduationPage.html">Graduation Page</a> 
+					  <a href="GraduationPage/GraduationPageCode.txt">View Code</a>    
+					  <a href="EasterEggs/Index.html">Bunny Webpage</a>
+					  <a href="EasterEggs/EasterBunnyCode.txt">View Code</a> 
+					</div>
+				  </li>
+
+				<li class="nav-list-item"><a href = "ContactMe.html"onclick="navigate(event, 'ContactMe.html')">Contact Me</a></li>	
+				<li class="nav-list-item"><a href = "Extras.html"onclick="navigate(event, 'Extras.html')">Extras</a></li>	
+			</ul>	
+		</div>
+
+
+	<div class="column">
+
+		<h1><u>Snowboarding</u></h1>
+
+		<img src="SnowboardingSnip.JPG" alt="OutdoorsPic" width="520" height="350">
+
+		<iframe width="455" height="809" src="https://www.youtube.com/embed/-fPUXTFwasM" title="Let’s flip into this week! #shorts #snowboarding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+
+
+
+	<div class="column2" id="codingColumn">
+		
+		<h1><u>Coding Languages</u></h1>
+
+		<h2>I enjoy working on projects in:</h2>
+
+		<ol>
+			<li style="color: crimson;">Java</li>
+			<li>C#</li>
+			<li>Html</li>
+			<li>JavaScript</li>
+			<li>SQL</li>
+		</ol>
+
+
+
+
+	</div>
+
+
+	<div class="column3">
+
+		<h1><u>Music</u></h1>
+
+
+		<iframe width="500" height="720" src="https://www.youtube.com/embed/ra_MxDxBL6w" title="Unreal Kickstart My Heart- Motley Crue Guitar Cover #guitar #music #cover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+		<audio controls>
+			<source src = "RickRolled.mp3" type = "audio/mpeg">
+		</audio>
+
+	</div>
+
+
+
+
+		<!-- Javascript for the fade-out --> 
+		<script>
+			function navigate(event, url) 
+			{
+				event.preventDefault();
+				document.body.classList.add('fade-out');
+				
+				
+				setTimeout(function() 
+				{
+					window.location.href = url;
+				}, 1000);
+			}	
+		</script>
+		<!-- End of JavaScript for fadeout-->
+
+
+
+
+
+</body>
+</html>

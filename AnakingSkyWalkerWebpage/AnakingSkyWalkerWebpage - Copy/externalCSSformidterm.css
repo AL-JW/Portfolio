@@ -1,0 +1,236 @@
+#mainbody {
+  background-color: #6e0101;
+  text-align: center;
+  padding-bottom: 80px; /* Change this to the height of my footer */
+  
+}
+
+p {
+	
+	font-family: 'Crimson Text', serif;
+	font-size: 25px;
+	color: #d17e02;
+	
+}	
+
+
+
+h1 {
+  color: #b5a642;
+  
+  letter-spacing: 4px;   
+  /*here is the letter spacing*/
+}
+
+
+h1::first-letter{
+	
+	color: #ff0000;
+    font-size: xx-large;
+	
+}
+
+
+
+
+
+
+ul {
+	
+  list-style-type: none;				
+  margin: 0;
+  padding: 0;
+  font-size: 300%
+  
+}
+
+
+li {
+
+  display: inline-block;
+  background-color:#7a7777;
+  font-family: 'Crimson Text', serif;
+  
+}
+
+li a, .dropbtn {
+	
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+
+li a:hover, .dropdown:hover .dropbtn {
+	
+  background-color: red;
+  
+}
+
+
+li.dropdown {
+	
+  display: inline-block;
+  color: white;
+  padding: 14px 16px;
+  
+}
+
+
+.dropdown-content {
+	
+  display: none;
+  position: absolute; 
+  background-color: #f9f9f9;
+  min-width: 160px;
+  
+}
+
+.dropdown-content a {
+	
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: green;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover {  <!--pseudo-class selector for the hyperlinks in the navigation bar-->
+
+background-color: #6dde76;
+
+}
+
+.dropdown:hover .dropdown-content {
+	
+  display: block;
+  
+}
+
+
+
+
+div.gallery {
+	
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 225px;
+  
+}
+
+div.gallery:hover {
+	
+  border: 1px solid #777;
+  
+}
+
+div.gallery img {
+	
+  width: 100%;
+  height: auto;
+  max-width: 178px;
+  max-height:300px;
+  
+}
+
+div.desc {
+	
+  padding: 15px;
+  text-align: center;
+  
+}
+
+.gallery {
+	
+  text-align: center;
+  
+}
+
+.gallery-center-images {
+	
+	text-align: center;
+	
+}
+
+
+.gallery img {
+	
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin: 10px;
+  
+}
+
+.paragraphSizeAndFont { <!-- Not used -->
+	
+	
+}
+
+.videoborder {
+	
+	border: 25px solid #1c1919;
+	
+}
+
+.externalLinkMarquee {
+	
+	background-color: #d17e02;
+	border: 5px dashed black;
+	padding: 10px;
+	margin: 10px 0;	
+	
+}
+
+.marquee-text {
+	
+	background-color: #d17e02;
+	font-family: 'Crimson Text', serif;
+	font-size: 25px;
+	
+}
+
+	
+.header2 {
+	
+	background-image: url("DarthHeader (2).png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:top center;
+	height: 400px;
+	width: 100%;
+	background-color: transparent;
+	text-align: center;
+	padding: 20px;
+	color: white;
+	
+	}
+	
+	
+.footer {
+	
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: grey;
+	color: white;
+	text-align: center;
+ }
+}
+
+
+
+
+
+
+
+ 
+
+

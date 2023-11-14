@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Extras</title>
+
+    <script src="FourFunctions.js"></script>
+
+</head>
+<body>
+
+
+    <h1>Four JavaScript Functions</h1>
+
+    <h3> Let's use the numbers 8 and 8.</h3>
+
+    <p id="addResult"></p>
+    <p id="subtractResult"></p>
+    <p id="multiplyResult"></p>
+    <p id="divideResult"></p>
+
+
+
+    <button onclick="runFunctions()">Run Math Functions</button>
+    
+
+    <script>
+
+        function runFunctions() 
+        {
+
+            document.getElementById("addResult").innerHTML = 'Addition ' + add(8,8);
+            document.getElementById("subtractResult").innerHTML = 'Subtraction  ' + subtract(8,8);
+            document.getElementById("multiplyResult").innerHTML = 'Multiply ' + multiply(8,8);
+            document.getElementById("divideResult").innerHTML = 'Division ' + divide(8,8);    
+        }
+
+        
+    </script>
+
+    <!--The first use of the array-->
+    <div id="arrayContainer"></div>
+    <input type="text" id="inputField">
+    <button onclick="addToTheArray()">Add stuff to Array</button>
+
+
+    <!--The second use of the array-->
+    <div id="sumContainer"></div>
+    <button onclick="displaySum()">Display The Sum of Array</button>
+
+
+    <ul>
+        <li>Eminem</li>
+        <li>Post Malone</li>
+        <li>The Weeknd</li>
+        <li>Maroon 5</li>
+        <li>Linkin Park</li>
+        <li>Five Finger Death Punch</li>
+        <li>Avenged Sevenfold</li>
+        <li>Bullet For My Valentine</li>
+    </ul>
+
+
+
+    <div id = "listContainer"></div>
+    <button onclick = "displayListItems()">Display List items.</button>
+
+   
+
+</body>
+</html>

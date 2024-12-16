@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\Fitness_App\\CIS341_Checkpoint3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\fitness_app\\cis341_checkpoint3\\workouttrackingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\fitness_app\\cis341_checkpoint3\\workouttrackingapp\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\fitness_app\\cis341_checkpoint3\\workouttrackingapp\\data\\workouttrackingappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\data\\workouttrackingappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\fitness_app\\cis341_checkpoint3\\workouttrackingapp\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkoutTrackingAppContext.cs",
+              "DocumentMoniker": "X:\\Fitness_App\\CIS341_Checkpoint3\\WorkoutTrackingApp\\Data\\WorkoutTrackingAppContext.cs",
+              "RelativeDocumentMoniker": "WorkoutTrackingApp\\Data\\WorkoutTrackingAppContext.cs",
+              "ToolTip": "X:\\Fitness_App\\CIS341_Checkpoint3\\WorkoutTrackingApp\\Data\\WorkoutTrackingAppContext.cs",
+              "RelativeToolTip": "WorkoutTrackingApp\\Data\\WorkoutTrackingAppContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T22:14:06.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "X:\\Fitness_App\\CIS341_Checkpoint3\\WorkoutTrackingApp\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "WorkoutTrackingApp\\Data\\DbInitializer.cs",
+              "ToolTip": "X:\\Fitness_App\\CIS341_Checkpoint3\\WorkoutTrackingApp\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "WorkoutTrackingApp\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T22:13:59.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "X:\\Fitness_App\\CIS341_Checkpoint3\\WorkoutTrackingApp\\Program.cs",
+              "RelativeDocumentMoniker": "WorkoutTrackingApp\\Program.cs",
+              "ToolTip": "X:\\Fitness_App\\CIS341_Checkpoint3\\WorkoutTrackingApp\\Program.cs",
+              "RelativeToolTip": "WorkoutTrackingApp\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAwwFEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T22:13:47.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.txt",
+              "DocumentMoniker": "X:\\Fitness_App\\CIS341_Checkpoint3\\WorkoutTrackingApp\\README.txt",
+              "RelativeDocumentMoniker": "WorkoutTrackingApp\\README.txt",
+              "ToolTip": "X:\\Fitness_App\\CIS341_Checkpoint3\\WorkoutTrackingApp\\README.txt",
+              "RelativeToolTip": "WorkoutTrackingApp\\README.txt",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-13T23:19:27.043Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

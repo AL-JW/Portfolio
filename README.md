@@ -9,31 +9,56 @@ Welcome to my portfolio repository! This repository contains all my key projects
 ### [1. Project 1: Simple Biography Webpage.](https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/)
 
 
-- **Description**: A fully responsive and dynamic calculator built with HTML, CSS, and JavaScript.
+- **Description**: A simple website using html, css, javascript, that gives a little information about a fictional character and showvcases some of my web design skills.
 - **Features**:
-  - Basic arithmetic operations.
-  - Clear and reset functionality.
-  - Simple and user-friendly interface.
+  - CSS 
+  - HTML
+  - Javascript
+  - Built with React
+  - Nav Bar
+  - Multiple Pages
+  - External Links
+  - Styling
 
 ---
 
-### [2. Project 2: Weather App](https://yourusername.github.io/portfolio/project2/)
-- **Description**: A weather forecast application built with React, using the OpenWeather API.
+### [2. Project 2: Fitness App](https://yourusername.github.io/portfolio/project2/)
+- **Description**: A full stack Fittness Application where a user can track their workouts over time.
 - **Features**:
-  - Displays current weather based on location.
-  - 5-day forecast feature.
-  - Modern and responsive design.
+  - Exercises to view, and workouts to view.
+  - Trackable workouts you can save to your account over time. 
+  - Secure Login and Account creation functionality.
+  - Password Reset.
+  - Messaging personal trainers.
 
 ---
 
-### [3. Project 3: Personal Blog](https://yourusername.github.io/portfolio/project3/)
-- **Description**: A minimalist personal blog platform.
+### [3. Project 3: Economic Data Visualization (Capstone Project) ](https://yourusername.github.io/portfolio/project3/)
+- **Description**: A Economic Data Visualizer I created to showcase Data for Wisconsin Rapids Chamber of Commerce. 
 - **Features**:
-  - Clean UI for blog reading.
-  - Static site built using Next.js.
-  - Easily customizable for personal branding.
+  - Interactive Graphs to better understand economic data in the given counties. 
+  - Simple visualization of data to make it so the viewers are able to make more sense of the data and what it means. 
+  - Integrated into the chambers website so users are able to click right to it. 
 
 ---
+### [4. Project 4: Generic Advertisement Website with Navigation Bar and External links. ](https://yourusername.github.io/portfolio/project3/)
+- **Description**: A website that someone could use to advertise their business or themselves with multiple different pages for different information.
+- **Features**:
+  - Drop Down Navigation Bar.
+  - Headers and Footers.
+  - A form you are able to submit.
+  - External links on a drop down.
+  - Creative Styling.
+ 
+---
+### [5. Project 5: Card Game Of War ](https://yourusername.github.io/portfolio/project3/)
+- **Description**: A simple Card game application I have created to get more familiar with C#, creating methods, and classes.  
+- **Features**:
+  -Methods.
+  -Classes.
+  -Inheritence.
+  -Object Oriented Programming.
+  -Shuffle, Draw, Deal, Win, Lose Functionalities. 
 
 ## How to Clone and Run Locally
 If you'd like to explore these projects locally:

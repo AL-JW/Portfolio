@@ -1,9 +1,17 @@
-#mainbody {
-  background-color: #6e0101;
+body {
+  background: linear-gradient(to bottom right, #2c3e50, #4ca1af);
+  color: #ffffff;
   text-align: center;
-  padding-bottom: 80px; /* Change this to the height of my footer */
-  
+  padding-bottom: 80px;
+  border: 10px solid #b5a642; /* Golden copper tone inspired by Anakin's origins */
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px; /* Smooth corners for a polished look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
 }
+
+
+
 
 p {
 	
@@ -40,7 +48,10 @@ ul {
   list-style-type: none;				
   margin: 0;
   padding: 0;
-  font-size: 300%
+  font-size: 300%;
+  background-color: transparent; /* Darker gray for the navbar */
+  padding: 10px 0;
+  border-radius: 15px; /* Rounded edges for the nav bar */
   
 }
 
@@ -48,26 +59,29 @@ ul {
 li {
 
   display: inline-block;
-  background-color:#7a7777;
-  font-family: 'Crimson Text', serif;
-  
+  background-color: #6c757d; /* Slightly lighter gray for nav items */
+  color: white;
+  border-radius: 10px; /* Round individual nav items */
+  padding: 10px 20px;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
 }
+  
+
 
 li a, .dropbtn {
 	
-  display: inline-block;
-  color: white;
+   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Crimson Text', serif;
   
 }
 
 
 li a:hover, .dropdown:hover .dropbtn {
-	
-  background-color: red;
-  
+  background-color: #b5a642; /* Golden hover effect */
+  color: #343a40; /* Contrast text for hover */
+  border-radius: 15px; /* Rounded edges for the nav bar buttons */
 }
 
 
@@ -76,6 +90,7 @@ li.dropdown {
   display: inline-block;
   color: white;
   padding: 14px 16px;
+  
   
 }
 
@@ -87,6 +102,7 @@ li.dropdown {
   background-color: #f9f9f9;
   min-width: 160px;
   
+  
 }
 
 .dropdown-content a {
@@ -97,9 +113,10 @@ li.dropdown {
   display: block;
   text-align: left;
   
+  
 }
 
-.dropdown-content a:hover {  <!--pseudo-class selector for the hyperlinks in the navigation bar-->
+.dropdown-content a:hover {  
 
 background-color: #6dde76;
 
@@ -115,17 +132,19 @@ background-color: #6dde76;
 
 
 div.gallery {
-	
   display: inline-block;
-  margin: 5px;
-  border: 1px solid #ccc;
-  width: 225px;
-  
+  margin: 10px; /* Space between each gallery item */
+  border: 5px solid #b5a642; /* Golden border to match the header */
+  border-radius: 15px; /* Rounded edges for consistency */
+  width: 250px; /* Adjust to fit your image size */
+  overflow: hidden; /* Ensures content stays within the border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  text-align: center; /* Centers the caption text */
 }
 
 div.gallery:hover {
 	
-  border: 1px solid #777;
+  border: 2px solid #b5a642; /* Highlight with golden copper on hover */
   
 }
 
@@ -135,13 +154,28 @@ div.gallery img {
   height: auto;
   max-width: 178px;
   max-height:300px;
+  border-radius: 10px; /* Add a slight rounding to the image itself */
+  transition: transform 0.5s; /* Smooth zoom effect */
+  border: 5px solid black; /* Inner golden border */
+  
+}
+
+
+div.gallery img:hover {
+  
+  transform: scale(1.1); /* Zoom in slightly on hover */
   
 }
 
 div.desc {
 	
-  padding: 15px;
-  text-align: center;
+  padding: 10px;
+  font-family: 'Crimson Text', serif;
+  font-size: 18px; /* Adjust for readability */
+  color: #ffffff; /* Matches the rest of the page's color scheme */
+  background-color: #343a40; /* Dark background for the caption */
+  border-top: 2px solid #b5a642; /* Thin top border for separation */
+  border-radius: 0 0 10px 10px; /* Rounds the bottom corners of the description */
   
 }
 
@@ -168,62 +202,68 @@ div.desc {
   
 }
 
-.paragraphSizeAndFont { <!-- Not used -->
-	
-	
-}
-
 .videoborder {
 	
-	border: 25px solid #1c1919;
+	border: 0px solid #1c1919;
 	
 }
 
 .externalLinkMarquee {
 	
-	background-color: #d17e02;
-	border: 5px dashed black;
-	padding: 10px;
-	margin: 10px 0;	
+  background-color: #495057; /* Matches the navbar for consistency */
+  color: #ffffff; /* White text for contrast */
+  border: 5px dashed #b5a642; /* Keep the golden copper border */
+  padding: 10px;
+  margin: 10px 0;
 	
 }
 
 .marquee-text {
-	
-	background-color: #d17e02;
-	font-family: 'Crimson Text', serif;
-	font-size: 25px;
-	
+  background-color: #495057; /* Matches the dark gray navbar */
+  color: #ffffff; /* White text for better contrast */
+  font-family: 'Crimson Text', serif; /* Keep the existing font */
+  font-size: 22px; /* Slightly smaller for consistency */
+  padding: 10px 20px; /* Add padding for better spacing */
+  border-radius: 10px; /* Rounded edges for modern look */
+  display: inline-block; /* Keep the text confined to its box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add slight shadow for depth */
 }
+
 
 	
 .header2 {
-	
-	background-image: url("DarthHeader_2.PNG");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position:top center;
-	height: 400px;
-	width: 100%;
-	background-color: transparent;
-	text-align: center;
-	padding: 20px;
-	color: white;
-	
-	}
-	
-	
-.footer {
-	
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: grey;
-	color: white;
-	text-align: center;
- }
+  background-image: url("DarthHeader_2.PNG");
+  background-size: cover; /* Ensures the image spans the full width */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center center; /* Centers the image */
+  height: 250px; /* Adjust height as needed */
+  width: calc(100% - 20px); /* Ensures the header fits within the borders */
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border-radius: 15px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  overflow: hidden; /* Prevents content overflow */
+  margin: 0 auto; /* Centers the header horizontally */
+  border: 5px solid #b5a642; /* Optional border to match theme */
+  box-sizing: border-box; /* Includes padding and borders in width calculation */
 }
+
+	
+	
+  .footer {
+    position: relative; /* Part of the normal content flow */
+    width: 100%; /* Stretch across the page */
+    background-color: #343a40; /* Dark gray for the footer */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0; /* Add padding for spacing inside */
+    margin-top: 40px; /* Add spacing above the footer */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Add slight shadow for depth */
+    border-radius: 15px; /* Rounded edges for the nav bar */
+  }
+  
 
 
 

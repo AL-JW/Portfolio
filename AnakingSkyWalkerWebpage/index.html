@@ -4,6 +4,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="starwars_theme_styles.css"> <!-- Imported the CSS file for the Star Wars theme-->
 <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Imported these from google fonts for Star Wars themed fonts-->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
@@ -17,251 +18,30 @@
 <title>
 Anakin Skywalker Overview
 </title>
-
-<style>
-
-
-body {
-
-		background-color: black;
-		text-align: center;
-		padding-bottom: 80px; 
-
-}
-	
-p {
-
-	color: white;
-	border-style: solid;
-	border-color: blue;
-	padding: 10px;
-	font-family: 'Syncopate', sans-serif;
-
-  }
-  
-h2 {
-
-	color: white;
-	font-family: 'Crimson Text', serif;
-
-}
-
-
-ul {
-
-	text-align: center;
-  list-style-type: none;				
-  margin: 0;
-  padding: 0;
-  font-size: 300%
-  
-}
-
-
-li {
-
-  display: inline-block;
-  background-color:#7a7777;
-  font-family: 'Crimson Text', serif;
-  
-}
-
-li a, .dropbtn {
-
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  
-}
-
-
-div.gallery {
-
-  margin: 5px;
-  border: 10px solid #ccc;
-  float: left;
-  width: 220px;
-  
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-  
-}
-
-div.gallery img {
-
-  width: 100%;
-  height: auto;
-  
-}
-
-
-div.desc {
-
-  padding: 15px;
-  text-align: center;
-  
-}
-
-.column, .column2, .column3 {
-
-	display: inline-block;
-	width: 30%;
-	padding: 10px;
-	mardin: 10px;
-	vertical-align: top;
-	box-sizing: border-box;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-
-  background-color: red;
-  
-}
-
-
-li.dropdown {
-
-  display: inline-block;
-  color: white;
-  padding: 14px 16px;
-  
-}
-
-
-.dropdown-content {
-
-  display: none;
-  position: absolute;  /* positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
-  background-color: #f9f9f9;
-  min-width: 160px;
-  
-}
-
-.dropdown-content a {
-
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: green;
-  display: block;
-  text-align: left;
-  
-}
-
-.dropdown-content a:hover 
-{  /*pseudo-class selector for the hyperlinks in the navigation bar*/
-
-	background-color: #6dde76;
-
-}
-
-.dropdown:hover .dropdown-content {
-
-  display: block;
-  
-}
-
-
-.interestingFacts {
-
-	font-size: 12px;
-	font-family: 'Syncopate', sans-serif;
-	color: white;
-	background: black;
-	border-style: solid;
-	border-color: blue;
-	padding: 10px;
-	margin: 10px 0;
-}
-
-
-.interestingFacts li {
-
-	font-family: 'Syncopate', sans-serif;
-	font-size: 14px;
-	margin: 5px 0;
-	background-color: black;
-	
-}
-
-
-
-.header {
-
-	background-image: url("StarWarsHeader.PNG");
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 200px;
-	width: 100%;
-	background-color: #F1F1F1;
-	text-align: center;
-	padding: 20px;
-	color: white;
-}
-
-
-
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: grey;
-	color: white;
-	text-align: center;
-}
-
-
-
-</style>
-
 </head>
-<body>
-
+<body id="mainbody">
+  <ul>
+      <div class="Homepage_header">
+          <h2>Anakin SkyWalker</h2>
+      </div>
+      <li><a href  = "index.html">Home</a></li>
+      <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
+      <li><a href = "Legacy.html">Legacy</a></li>
+      <li class="dropdown">
+        <a class="dropbtn">Explore More</a>
+        <div class="dropdown-content">  
+          <a href="https://www.starwars.com">Official Star Wars Website</a>
+          <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>     
+          <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+        </div>
+      </li>  
+  </ul>
+ 
+ 
  
 
-
-<ul>
-
-
-<div class="header">
-    <h1> Anakin SkyWalker</h1>
-	
-	
-</div>
  
-	<li><a href  = "index.html">Home</a></li>
-	<li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
-	<li><a href = "Legacy.html">Legacy</a></li>
-  
-  
    
-  
-  
-  <li class="dropdown">
-    <a class="dropbtn">Explore More</a>
-    <div class="dropdown-content">
-	
-	  <a href="https://www.starwars.com">Official Star Wars Website</a>
-      <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>     
-      <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
-    </div>
-  </li>
-  
- </ul>
- 
- 
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- 
-   <div class="row">
   
   
     <div class="column">
@@ -270,9 +50,7 @@ li.dropdown {
 	  he was discovered as a young boy and trained as a Jedi by Obi-Wan Kenobi. 
 	  Fear and pride drove him to the dark side of the Force, 
 	  and, as Darth Vader, he helped slaughter nearly all the Jedi in the galaxy. </p>
-	  
-	  
-	  
+
 	  <img src="Homepage_Lightsaber_Picture.png" alt="www.starwars.net" width="400" height="450">
     </div>
 	
@@ -297,10 +75,10 @@ li.dropdown {
       
 	  
 		<ul class = "interestingFacts" style = "list-style-type:disc; list-style-color: blue">
-	      <li>- He was a Jedi who turned to the dark side after losing his beloved wife.</li>
-		  <li>- Anakin first met the Jedi when Qui-Gon Jinn came to Watto’s shop looking for spare parts.</li>
+	        <li>- He was a Jedi who turned to the dark side after losing his beloved wife.</li>
+		      <li>- Anakin first met the Jedi when Qui-Gon Jinn came to Watto’s shop looking for spare parts.</li>
           <li>- Before becoming an evil character, Anakin always helped others who needed help.</li>
-		  <li>- Anakin was born without a father.</li>
+		      <li>- Anakin was born without a father.</li>
           <li>- He is a much-loved antagonist character.</li>
           <li>- Anakin is tempted by dark forces and misuses his powers.</li>
           <li>- He is not half-hearted in eliminating anyone who stands in front of him and gets in his way because he has tremendous power.</li>
@@ -319,7 +97,7 @@ li.dropdown {
   
   
   <div class="footer">
-		<p>...This is The Way...</p>
+		<p>Every legend has a beginning.</p>
   </div>
 
 

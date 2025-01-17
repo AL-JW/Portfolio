@@ -1,106 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="starwars_theme_styles.css" />
+    <!-- Imported the CSS file for the Star Wars theme-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Imported these from google fonts for Star Wars themed fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="starwars_theme_styles.css"> <!-- Imported the CSS file for the Star Wars theme-->
-<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Imported these from google fonts for Star Wars themed fonts-->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Syncopate&display=swap"
+      rel="stylesheet"
+    />
 
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Syncopate&display=swap" rel="stylesheet">
-
-
-<title>
-Anakin Skywalker Overview
-</title>
-</head>
-<body id="mainbody">
-  <ul>
+    <title>Home Page</title>
+  </head>
+  <body id="mainbody">
+    <ul>
       <div class="Homepage_header">
-          <h2>Anakin SkyWalker</h2>
+        <h2>Anakin SkyWalker</h2>
       </div>
-      <li><a href  = "index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
-      <li><a href = "Legacy.html">Legacy</a></li>
+      <li><a href="Legacy.html">Legacy</a></li>
       <li class="dropdown">
         <a class="dropbtn">Explore More</a>
-        <div class="dropdown-content">  
+        <div class="dropdown-content">
           <a href="https://www.starwars.com">Official Star Wars Website</a>
-          <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>     
+          <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
           <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
         </div>
-      </li>  
-  </ul>
- 
- 
- 
+      </li>
+    </ul>
 
- 
-   
-  
-  
-    <div class="column">
-      <h2>About Anakin Skywalker And Where He is From Based On The Facts</h2>
-      <p>Anakin Skywalker was one of the most powerful Jedi who ever lived. Raised as a slave on the desert planet Tatooine, 
-	  he was discovered as a young boy and trained as a Jedi by Obi-Wan Kenobi. 
-	  Fear and pride drove him to the dark side of the Force, 
-	  and, as Darth Vader, he helped slaughter nearly all the Jedi in the galaxy. </p>
+    <div class="container">
+      <div class="column">
+        <h2>Anakin Skywalker: Origins and Backstory</h2>
+        <p>
+          Anakin Skywalker, one of the most powerful Jedi, rose from slavery on
+          Tatooine to Jedi training under Obi-Wan Kenobi. Consumed by fear and
+          pride, he fell to the dark side, becoming Darth Vader and leading the
+          purge of the Jedi.
+        </p>
+        <img
+          src="Homepage_Lightsaber_Picture.png"
+          alt="www.starwars.net"
+          class="responsive-img"
+        />
+      </div>
 
-	  <img src="Homepage_Lightsaber_Picture.png" alt="www.starwars.net" width="400" height="450">
+      <div class="column column2">
+        <h2>Discover More About Anakin Skywalker</h2>
+
+        <div class="video-button-container">
+          <a
+            href="https://www.youtube.com/watch?v=Xe7Uwm0QsYk"
+            target="_blank"
+            class="video-button"
+          >
+            Dive into the Legacy
+          </a>
+        </div>
+        <div class="lightsaber-container">
+          <h3>Activate a Lightsaber!</h3>
+          <div class="lightsaber">
+            <div class="hilt"></div>
+            <div class="blade"></div>
+          </div>
+          <button onclick="toggleLightsaber()">Activate</button>
+
+          <!-- Color selection buttons -->
+          <div class="color-buttons">
+            <button onclick="changeBladeColor('#E74C3C')">Red</button>
+            <button onclick="changeBladeColor('#2874A6')">Blue</button>
+            <button onclick="changeBladeColor('#2ECC71')">Green</button>
+            <button onclick="changeBladeColor('#F1C40F')">Yellow</button>
+            <button onclick="changeBladeColor('#AF7AC5')">Purple</button>
+          </div>
+          <!-- Notification Area -->
+          <div id="notification" class="notification"></div>
+        </div>
+      </div>
+
+      <div class="column column3">
+        <h2>Here are some interesting facts about Anakin Skywalker:</h2>
+        <ul class="interestingFacts">
+          <li>
+            He was a Jedi who turned to the dark side after losing his beloved
+            wife.
+          </li>
+          <li>
+            Anakin first met the Jedi when Qui-Gon Jinn came to Watto’s shop
+            looking for spare parts.
+          </li>
+          <li>
+            Before becoming an evil character, Anakin always helped others who
+            needed help.
+          </li>
+          <li>Anakin was born without a father.</li>
+          <li>He is a much-loved antagonist character.</li>
+          <li>Anakin is tempted by dark forces and misuses his powers.</li>
+          <li>
+            He is not half-hearted in eliminating anyone who stands in front of
+            him and gets in his way because he has tremendous power.
+          </li>
+          <li>
+            Despite his evil nature, he still has a good side where he killed
+            Palpatine to save his son.
+          </li>
+          <li>
+            He persuaded his son Luke to join the Dark Side, but he refused.
+          </li>
+          <li>
+            There is a statue of Darth Vader in the National Cathedral in
+            Washington DC.
+          </li>
+          <li>
+            Anakin programmed a training droid to behave like Darth Maul and
+            dispatch it swiftly.
+          </li>
+        </ul>
+      </div>
     </div>
-	
-	
-	
-	
-	
-	
 
-
-    <div class="column2">
-      <h2>Battle Between Anakin and Obi Wan Final Scene (Spoiler if Have not seen it)</h2>
-      <p>Here is the video:		
-			<iframe width="470" height="470" src="https://www.youtube.com/embed/onRnL6MBunU" title="Star Wars: Revenge of the Sith - Obi Wan vs Anakin Fight Part 1 4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	  </p>
+    <a href="https://www.youtube.com/watch?v=Hpz9gA_1oLM" target="_blank">
+      <img src="anakin_2.jpg" alt="www.starwars.net" class="footer-img" />
+    </a>
+    <div class="footer">
+      <p>Every legend has a beginning.</p>
     </div>
-	
-	
-	
-	 <div class="column3">
-      <h2>Here are some interesting facts about Anakin Skywalker:</h2>
-      
-	  
-		<ul class = "interestingFacts" style = "list-style-type:disc; list-style-color: blue">
-	        <li>- He was a Jedi who turned to the dark side after losing his beloved wife.</li>
-		      <li>- Anakin first met the Jedi when Qui-Gon Jinn came to Watto’s shop looking for spare parts.</li>
-          <li>- Before becoming an evil character, Anakin always helped others who needed help.</li>
-		      <li>- Anakin was born without a father.</li>
-          <li>- He is a much-loved antagonist character.</li>
-          <li>- Anakin is tempted by dark forces and misuses his powers.</li>
-          <li>- He is not half-hearted in eliminating anyone who stands in front of him and gets in his way because he has tremendous power.</li>
-          <li>- Despite his evil nature, he still has a good side where he killed Palpatine to save his son.</li>
-          <li>- He persuaded his son Luke to join the Dark Side, but he refused.</li>
-          <li>- There is a statue of Darth Vader in the National Cathedral in Washington DC.</li>
-          <li>- Anakin programmed a training droid to behave like Darth Maul and dispatch it swiftly.</li>
-		</ul>  		  
-      
-		
-    </div>
-  </div>
-  
-  <img src="Anakin2.jpg" alt="www.starwars.net" width="104" height="142">
-  
-  
-  
-  <div class="footer">
-		<p>Every legend has a beginning.</p>
-  </div>
-
-
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

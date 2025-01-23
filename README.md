@@ -7,6 +7,7 @@ Welcome to my portfolio repository! This repository contains all my key projects
 ## Projects
 
 ### <a href="https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/" target="_blank">1. Project 1: Simple Biography Webpage.</a>
+*(Tip: Use Ctrl+Click or Cmd+Click to open in a new tab!)*
 
 
 

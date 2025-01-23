@@ -38,3 +38,43 @@ function changeBladeColor(color) {
   // Update the blade color dynamically
   blade.style.setProperty("--blade-color", color);
 }
+
+/*Lightsaber duel*/
+
+const redSaber = document.querySelector(".lightsaber.red");
+const blueSaber = document.querySelector(".lightsaber.blue");
+const clashEffect = document.querySelector(".clash");
+
+// Random movement logic
+function moveSaber(saber) {
+  const x = Math.random() * 80 + 10; // Horizontal movement
+  const y = Math.random() * 80 + 10; // Vertical movement
+  saber.style.transform = `translate(${x}%, ${y}%)`;
+}
+
+// Clash effect logic
+function clash() {
+  // Get the midpoints of the sabers
+  const redRect = redSaber.getBoundingClientRect();
+  const blueRect = blueSaber.getBoundingClientRect();
+
+  const clashX = (redRect.left + blueRect.left) / 2;
+  const clashY = (redRect.top + blueRect.top) / 2;
+
+  clashEffect.style.left = `${clashX}px`;
+  clashEffect.style.top = `${clashY}px`;
+  clashEffect.style.opacity = 1;
+
+  // Fade the clash effect after animation
+  setTimeout(() => (clashEffect.style.opacity = 0), 300);
+}
+
+// Animate the duel
+function animateDuel() {
+  moveSaber(redSaber);
+  moveSaber(blueSaber);
+  clash();
+}
+
+// Start the animation
+setInterval(animateDuel, 1000);

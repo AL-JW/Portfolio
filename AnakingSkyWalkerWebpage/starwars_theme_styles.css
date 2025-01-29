@@ -156,11 +156,25 @@ div.desc {
 }
 
 .externalLinkMarquee {
-  background-color: #495057; /* Matches the navbar for consistency */
+  background-color: #495057; /* Matches the navbar */
   color: #ffffff; /* White text for contrast */
-  border: 5px dashed #b5a642; /* Keep the golden copper border */
+  border: 5px solid #b5a642; /* Keep the golden copper border */
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px auto; /* Center it horizontally */
+  width: 90%; /* Default width */
+  max-width: 1120px; /* Keep it wide for desktop */
+  box-sizing: border-box; /* Prevents padding from affecting width */
+  overflow: hidden; /* Prevents text from breaking layout */
+  text-align: center; /* Ensure text is centered inside */
+  display: flex; /* Ensures proper centering */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+}
+
+@media (max-width: 480px) {
+  .externalLinkMarquee {
+    max-width: 250px; /* Keep it from overflowing on small screens */
+  }
 }
 
 .marquee-text {
@@ -225,14 +239,12 @@ div.desc {
   background-image: url("PathToTheDarkside_Header_Picture.png");
 }
 
-
 /* Adjust Header Size on Mobile */
 @media (max-width: 768px) {
   .header2 {
     height: 150px; /* Reduce height for mobile */
     font-size: 1.8rem; /* Make text smaller */
     padding: 10px; /* Adjust spacing */
-    
   }
 }
 
@@ -244,7 +256,6 @@ div.desc {
     padding: 10px; /* Adjust spacing */
   }
 }
-
 
 .footer {
   position: relative; /* Part of the normal content flow */
@@ -401,22 +412,20 @@ h2 {
 
 /* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
-  .Homepage_header h2
-  {
+  .Homepage_header h2 {
     font-size: 2em; /* Reduce size for mobile */
     top: 30px; /* Move text up slightly */
   }
-.header2 h2 {
-  font-size: 2em; /* Reduce size for mobile */
+  .header2 h2 {
+    font-size: 2em; /* Reduce size for mobile */
     top: 35px; /* Move text up slightly */
-}
-
+  }
 }
 
 /* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
   .Homepage_header.header-legacy h2 {
-    font-size: 1.0em; /* Smaller size for mobile */
+    font-size: 1em; /* Smaller size for mobile */
     top: 40px; /* Move text up slightly */
   }
 }
@@ -818,71 +827,86 @@ caption {
 }
 
 /* Mobile navbar (hidden by default) */
+/* Mobile Navbar */
 .mobile-navbar {
-  display: none; /* Hidden on larger screens */
-  background-color: transparent;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Make sure it takes full width */
   padding: 10px;
+  box-sizing: border-box;
+  background-color: transparent; /* Adjust if needed */
 }
 
-/* Mobile nav links - Hidden state */
+/* Mobile Navigation Links */
 .mobile-nav-links {
-  display: flex;
+  max-height: 0px; /* Initially hidden */
   flex-direction: column;
   list-style: none;
-  gap: 10px;
-  background-color: transparent; /* Darker gray for the navbar */
-  transform: scaleY(0); /* Collapse visually */
-  transform-origin: top; /* Animate from the top */
-  max-height: 0; /* Collapse the space */
-  overflow: hidden; /* Hide overflowing content */
-  transition: transform 0.3s ease-in-out, max-height 0.3s ease-in-out; /* Smooth animations */
-  
+  background-color: transparent;
+  transform: scaleY(0);
+  transition: transform 0.3s ease-in-out, max-height 0.3s ease-in-out;
 }
 
-/* Mobile nav links - Visible state */
+/* Show when active */
 .mobile-nav-links.show {
-  transform: scaleY(1); /* Expand visually */
-  max-height: 500px; /* Large enough to fit the content */
+  transform: scaleY(1);
+  max-height: 500px; /* Ensure enough space */
 }
+
+/* Each list item takes full width */
 .mobile-nav-links li {
-  display: flex; /* Allows <a> to take full space */
-  justify-content: center;
-  align-items: center;
-  padding: 0; /* Remove padding so <a> fills <li> */
-}
-
-
-.mobile-nav-links a {
-  display: flex;
-  width: 100%; /* Make <a> fill the entire <li> */
-  height: 100%; /* Ensure full height clickability */
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  font-size: 1.2rem;
+  width: 100%;
   text-align: center;
 }
 
-/* Hamburger button styling */
+/* Ensure links don’t cut off */
+.mobile-nav-links a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Ensure dropdown stays inside screen */
+.mobile-dropdown-content {
+  display: none;
+  flex-direction: column;
+  width: 100%; /* Full width */
+  background: #222;
+  padding: 10px;
+  position: relative;
+}
+
+.mobile-dropdown-content a {
+  padding: 10px;
+  text-align: center;
+}
+
+.mobile-dropdown-content.show {
+  display: flex;
+}
+
+/* Hamburger Button */
 .hamburger {
   font-size: 2rem;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
+  right: 100px;
 }
 
+/* Hide desktop navbar on mobile */
 @media (max-width: 768px) {
   .desktop-navbar {
-    display: none; /* Hide desktop navbar on mobile */
+    display: none;
   }
 
   .mobile-navbar {
-    display: flex; /* Show mobile navbar */
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
   }
 }
 
@@ -903,6 +927,7 @@ caption {
     transition: max-height 0.7s ease-in-out, padding 0.3s ease-in-out;
     padding: 0; /* No padding when collapsed */
   }
+}
 
 /* When content is visible */
 .column-content.active {
@@ -924,7 +949,6 @@ caption {
   background-color: #b5a642; /* Highlight on hover */
 }
 
-
 /* Style for a the path to darkside video */
 
 .video-container {
@@ -944,4 +968,60 @@ caption {
   left: 0;
   width: 100%; /* Make iframe fill the container */
   height: 100%;
+}
+
+/*Mobile explore more dropdown view */
+
+/* Hide dropdown content by default */
+/* Hide dropdown content initially */
+
+.mobile-dropdown {
+  position: relative;
+  display: inline-block; /* Matches desktop styling */
+}
+
+.mobile-dropdown-content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background: transparent;
+  border-radius: 10px;
+  padding: 0px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+  max-height: 0;
+  background-color: #343a40; /* Dark background */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  max-width: 250px; /* Prevents it from getting too wide */
+}
+
+/* When active, expand dropdown and add padding */
+.mobile-dropdown-content.show {
+  max-height: 300px; /* Adjust to fit content */
+  padding: 10px;
+}
+
+/* Ensure dropdown expands properly in mobile view */
+@media (max-width: 768px) {
+  .mobile-dropdown-content {
+    width: 100%;
+    position: relative; /* Ensure it follows the flow of the page */
+  }
+}
+/* Smooth dropdown effect */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile menu should have relative positioning */
+.mobile-dropdown {
+  position: relative;
+  width: 100%;
 }

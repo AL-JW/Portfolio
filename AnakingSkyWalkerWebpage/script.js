@@ -71,3 +71,31 @@ function toggleContent(index) {
     selectedContent.classList.add("active");
   }
 }
+
+/* Javascript function for the mobile view explore more dropdown button */
+
+function toggleMobileMenu() {
+  const navLinks = document.querySelector(".mobile-nav-links");
+  navLinks.classList.toggle("show");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileDropbtn = document.querySelector(".mobile-dropbtn");
+  const mobileDropdownContent = document.querySelector(
+    ".mobile-dropdown-content"
+  );
+
+  mobileDropbtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    mobileDropdownContent.classList.toggle("show");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      !mobileDropbtn.contains(event.target) &&
+      !mobileDropdownContent.contains(event.target)
+    ) {
+      mobileDropdownContent.classList.remove("show");
+    }
+  });
+});

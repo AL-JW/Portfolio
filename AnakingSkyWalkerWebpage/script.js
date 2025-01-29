@@ -39,42 +39,35 @@ function changeBladeColor(color) {
   blade.style.setProperty("--blade-color", color);
 }
 
-/*Lightsaber duel*/
-
-const redSaber = document.querySelector(".lightsaber.red");
-const blueSaber = document.querySelector(".lightsaber.blue");
-const clashEffect = document.querySelector(".clash");
-
-// Random movement logic
-function moveSaber(saber) {
-  const x = Math.random() * 80 + 10; // Horizontal movement
-  const y = Math.random() * 80 + 10; // Vertical movement
-  saber.style.transform = `translate(${x}%, ${y}%)`;
+function toggleMobileMenu() {
+  const navLinks = document.querySelector(".mobile-nav-links");
+  navLinks.classList.toggle("show");
 }
 
-// Clash effect logic
-function clash() {
-  // Get the midpoints of the sabers
-  const redRect = redSaber.getBoundingClientRect();
-  const blueRect = blueSaber.getBoundingClientRect();
+/* Toggle for column dropdowns*/
 
-  const clashX = (redRect.left + blueRect.left) / 2;
-  const clashY = (redRect.top + blueRect.top) / 2;
+function toggleContent(index) {
+  // Check if screen size is mobile (768px or smaller)
+  if (window.innerWidth > 768) {
+    return; // Do nothing if it's desktop
+  }
 
-  clashEffect.style.left = `${clashX}px`;
-  clashEffect.style.top = `${clashY}px`;
-  clashEffect.style.opacity = 1;
+  const contents = document.querySelectorAll(".column-content");
+  const selectedContent = contents[index];
 
-  // Fade the clash effect after animation
-  setTimeout(() => (clashEffect.style.opacity = 0), 300);
+  // If the content is already expanded, collapse it
+  if (selectedContent.classList.contains("active")) {
+    selectedContent.style.maxHeight = null; // Collapse the content
+    selectedContent.classList.remove("active");
+  } else {
+    // Collapse all other columns
+    contents.forEach((content) => {
+      content.style.maxHeight = null;
+      content.classList.remove("active");
+    });
+
+    // Expand the selected column
+    selectedContent.style.maxHeight = selectedContent.scrollHeight + "px";
+    selectedContent.classList.add("active");
+  }
 }
-
-// Animate the duel
-function animateDuel() {
-  moveSaber(redSaber);
-  moveSaber(blueSaber);
-  clash();
-}
-
-// Start the animation
-setInterval(animateDuel, 1000);

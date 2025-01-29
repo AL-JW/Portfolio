@@ -26,116 +26,144 @@
     <div class="Homepage_header header-homepage">
       <h2>Anakin SkyWalker</h2>
     </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
-      <li><a href="Legacy.html">Legacy</a></li>
-      <li class="dropdown">
-        <a class="dropbtn">Explore More</a>
-        <div class="dropdown-content">
-          <a href="https://www.starwars.com">Official Star Wars Website</a>
-          <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
-          <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
-        </div>
-      </li>
-    </ul>
+    <!-- Desktop Navigation -->
+    <div class="desktop-navbar">
+      <ul class="desktop-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
+        <li><a href="Legacy.html">Legacy</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Explore More</a>
+          <div class="dropdown-content">
+            <a href="https://www.starwars.com">Official Star Wars Website</a>
+            <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
+            <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-navbar">
+      <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
+        <li><a href="Legacy.html">Legacy</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Explore More</a>
+          <div class="dropdown-content">
+            <a href="https://www.starwars.com">Official Star Wars Website</a>
+            <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
+            <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <div class="container">
       <div class="column">
-        <h2>Anakin Skywalker: Origins and Backstory</h2>
-        <p>
-          Anakin Skywalker, one of the most powerful Jedi, rose from slavery on
-          Tatooine to Jedi training under Obi-Wan Kenobi. Consumed by fear and
-          pride, he fell to the dark side, becoming Darth Vader and leading the
-          purge of the Jedi.
-        </p>
-        <img
-          src="Homepage_Lightsaber_Picture.png"
-          alt="www.starwars.net"
-          class="responsive-img"
-        />
-        <img src="Saber_1.jpg" alt="www.starwars.net" class="responsive-img" />
+        <h2 onclick="toggleContent(0)">
+          Anakin Skywalker: Origins and Backstory
+        </h2>
+        <div class="column-content">
+          <p>
+            Anakin Skywalker, one of the most powerful Jedi, rose from slavery
+            on Tatooine to Jedi training under Obi-Wan Kenobi. Consumed by fear
+            and pride, he fell to the dark side, becoming Darth Vader and
+            leading the purge of the Jedi.
+          </p>
+          <img
+            src="Homepage_Lightsaber_Picture.png"
+            alt="www.starwars.net"
+            class="responsive-img"
+          />
+          <img
+            src="Saber_1.jpg"
+            alt="www.starwars.net"
+            class="responsive-img"
+          />
+        </div>
       </div>
 
       <div class="column column2">
-        <h2>Discover More About Anakin Skywalker</h2>
-
-        <div class="video-button-container">
-          <a
-            href="https://www.youtube.com/watch?v=Xe7Uwm0QsYk"
-            target="_blank"
-            class="video-button"
-          >
-            Dive into the Legacy
-          </a>
-        </div>
-        <img src="Duel.jpg" alt="Anakin's Journey" class="responsive-img" />
-        <div class="lightsaber-container">
-          <h3>Activate a Lightsaber!</h3>
-          <div class="lightsaber">
-            <div class="hilt"></div>
-            <div class="blade"></div>
+        <h2 onclick="toggleContent(1)">Discover More About Anakin Skywalker</h2>
+        <div class="column-content">
+          <div class="video-button-container">
+            <a
+              href="https://www.youtube.com/watch?v=Xe7Uwm0QsYk"
+              target="_blank"
+              class="video-button"
+            >
+              Dive into the Legacy
+            </a>
           </div>
-          <button onclick="toggleLightsaber()">Activate</button>
-
-          <!-- Color selection buttons -->
-          <div class="color-buttons">
-            <button onclick="changeBladeColor('#E74C3C')">Red</button>
-            <button onclick="changeBladeColor('#2874A6')">Blue</button>
-            <button onclick="changeBladeColor('#2ECC71')">Green</button>
-            <button onclick="changeBladeColor('#F1C40F')">Yellow</button>
-            <button onclick="changeBladeColor('#AF7AC5')">Purple</button>
+          <img src="Duel.jpg" alt="Anakin's Journey" class="responsive-img" />
+          <div class="lightsaber-container">
+            <h3>Activate a Lightsaber!</h3>
+            <div class="lightsaber">
+              <div class="hilt"></div>
+              <div class="blade"></div>
+            </div>
+            <button onclick="toggleLightsaber()">Activate</button>
+            <div class="color-buttons">
+              <button onclick="changeBladeColor('#E74C3C')">Red</button>
+              <button onclick="changeBladeColor('#2874A6')">Blue</button>
+              <button onclick="changeBladeColor('#2ECC71')">Green</button>
+              <button onclick="changeBladeColor('#F1C40F')">Yellow</button>
+              <button onclick="changeBladeColor('#AF7AC5')">Purple</button>
+            </div>
+            <div id="notification" class="notification"></div>
           </div>
-          <!-- Notification Area -->
-          <div id="notification" class="notification"></div>
         </div>
       </div>
 
       <div class="column column3">
-        <h2>Here are some interesting facts about Anakin Skywalker:</h2>
-        <ul class="interestingFacts">
-          <li>
-            He was a Jedi who turned to the dark side after losing his beloved
-            wife.
-          </li>
-          <li>
-            Anakin first met the Jedi when Qui-Gon Jinn came to Watto’s shop
-            looking for spare parts.
-          </li>
-          <li>
-            Before becoming an evil character, Anakin always helped others who
-            needed help.
-          </li>
-          <li>Anakin was born without a father.</li>
-          <li>He is a much-loved antagonist character.</li>
-          <li>Anakin is tempted by dark forces and misuses his powers.</li>
-          <li>
-            He is not half-hearted in eliminating anyone who stands in front of
-            him and gets in his way because he has tremendous power.
-          </li>
-          <li>
-            Despite his evil nature, he still has a good side where he killed
-            Palpatine to save his son.
-          </li>
-          <li>
-            He persuaded his son Luke to join the Dark Side, but he refused.
-          </li>
-          <li>
-            There is a statue of Darth Vader in the National Cathedral in
-            Washington DC.
-          </li>
-          <li>
-            Anakin programmed a training droid to behave like Darth Maul and
-            dispatch it swiftly.
-          </li>
-        </ul>
-        <img src="Duel_2.jpg" alt="www.starwars.net" class="responsive-img" />
+        <h2 onclick="toggleContent(2)">
+          Here are some interesting facts about Anakin Skywalker:
+        </h2>
+        <div class="column-content">
+          <ul class="interestingFacts">
+            <li>
+              He was a Jedi who turned to the dark side after losing his wife.
+            </li>
+            <li>
+              Anakin first met the Jedi when Qui-Gon Jinn came to Watto’s shop.
+            </li>
+            <li>Anakin always helped others before turning evil.</li>
+            <li>Anakin was born without a father.</li>
+            <li>He is a much-loved antagonist character.</li>
+            <li>Anakin misuses his powers and is tempted by dark forces.</li>
+            <li>
+              He has tremendous power and doesn’t hesitate to eliminate
+              obstacles.
+            </li>
+            <li>
+              Despite his evil nature, he killed Palpatine to save his son.
+            </li>
+            <li>
+              He persuaded his son Luke to join the Dark Side, but Luke refused.
+            </li>
+            <li>
+              There is a statue of Darth Vader in the National Cathedral in
+              Washington DC.
+            </li>
+            <li>
+              Anakin programmed a training droid to behave like Darth Maul and
+              dispatch it swiftly.
+            </li>
+          </ul>
+          <img src="Duel_2.jpg" alt="www.starwars.net" class="responsive-img" />
+        </div>
       </div>
     </div>
 
-    <a href="https://www.youtube.com/watch?v=Hpz9gA_1oLM" target="_blank">
-      <img src="anakin_2.jpg" alt="www.starwars.net" class="footer-img" />
-    </a>
+    <div class="footer-img-container">
+      <a href="https://www.youtube.com/watch?v=Hpz9gA_1oLM" target="_blank">
+        <img src="anakin_2.jpg" alt="www.starwars.net" class="footer-img" />
+        <div class="click-me-overlay">Click me!</div>
+      </a>
+    </div>
     <div class="footer">
       <p>Every legend has a beginning.</p>
     </div>

@@ -14,77 +14,99 @@
   </head>
   <body id="mainbody">
     <div class="Homepage_header header-legacy">
-      <h2 class="legacy-header-text">Anakin SkyWalker's Legacy</h2>
+      <h2 class="legacy-header-text">Legacy</h2>
     </div>
 
-    <!-- Navbar -->
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
-      <li><a href="Legacy.html">Legacy</a></li>
-      <li class="dropdown">
-        <a class="dropbtn">Explore More</a>
-        <div class="dropdown-content">
-          <a href="https://www.starwars.com">Official Star Wars Website</a>
-          <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
-          <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
-        </div>
-      </li>
-    </ul>
+    <!-- Desktop Navbar -->
+    <div class="desktop-navbar">
+      <ul class="desktop-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
+        <li><a href="Legacy.html">Legacy</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Explore More</a>
+          <div class="dropdown-content">
+            <a href="https://www.starwars.com">Official Star Wars Website</a>
+            <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
+            <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-navbar">
+      <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
+        <li><a href="Legacy.html">Legacy</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Explore More</a>
+          <div class="dropdown-content">
+            <a href="https://www.starwars.com">Official Star Wars Website</a>
+            <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
+            <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <!-- Content Section -->
     <div class="container">
       <div class="column">
-        <h2>Anakin Skywalker: Personal Info</h2>
-        <table class="second">
-          <tr>
-            <th>Category</th>
-            <th>Information</th>
-          </tr>
-          <tr>
-            <td>Name</td>
-            <td>Anakin Skywalker</td>
-          </tr>
-          <tr>
-            <td>Alias</td>
-            <td>Darth Vader</td>
-          </tr>
-          <tr>
-            <td>Birthplace</td>
-            <td>Tatooine</td>
-          </tr>
-          <tr>
-            <td>Lightsaber Color(s)</td>
-            <td>Blue when Jedi, then Red as a Sith Lord</td>
-          </tr>
-          <tr>
-            <td>Occupation</td>
-            <td>Jedi Knight, Sith Lord</td>
-          </tr>
-          <tr>
-            <td>Apprentices</td>
-            <td>Ahsoka Tano, Galen Marek</td>
-          </tr>
-          <tr>
-            <td>Master</td>
-            <td>Obi-Wan Kenobi, Darth Sidious</td>
-          </tr>
-          <tr>
-            <td>Portrayed by</td>
-            <td>Hayden Christensen, James Earl Jones (voice)</td>
-          </tr>
-          <tr>
-            <td>Gender</td>
-            <td>Male</td>
-          </tr>
-          <tr>
-            <td>Relationships</td>
-            <td>
-              (Wife) Padmé Amidala, (Jedi Master) Obi-Wan Kenobi, (Son) Luke
-              Skywalker, (Daughter) Princess Leia
-            </td>
-          </tr>
-        </table>
+        <h2 onclick="toggleContent(0)">Anakin Skywalker - Background</h2>
+        <div class="column-content">
+          <table class="second">
+            <tr>
+              <th>Category</th>
+              <th>Information</th>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td>Anakin Skywalker</td>
+            </tr>
+            <tr>
+              <td>Alias</td>
+              <td>Darth Vader</td>
+            </tr>
+            <tr>
+              <td>Birthplace</td>
+              <td>Tatooine</td>
+            </tr>
+            <tr>
+              <td>Lightsaber Color(s)</td>
+              <td>Blue when Jedi, then Red as a Sith Lord</td>
+            </tr>
+            <tr>
+              <td>Occupation</td>
+              <td>Jedi Knight, Sith Lord</td>
+            </tr>
+            <tr>
+              <td>Apprentices</td>
+              <td>Ahsoka Tano, Galen Marek</td>
+            </tr>
+            <tr>
+              <td>Master</td>
+              <td>Obi-Wan Kenobi, Darth Sidious</td>
+            </tr>
+            <tr>
+              <td>Portrayed by</td>
+              <td>Hayden Christensen, James Earl Jones (voice)</td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>Male</td>
+            </tr>
+            <tr>
+              <td>Relationships</td>
+              <td>
+                (Wife) Padmé Amidala, (Jedi Master) Obi-Wan Kenobi, (Son) Luke
+                Skywalker, (Daughter) Princess Leia
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
 
       <div class="column column2">
@@ -92,23 +114,25 @@
       </div>
 
       <div class="column column3">
-        <h2>Legacy in Star Wars</h2>
-        <p>
-          Anakin Skywalker remains one of the most iconic characters in the Star
-          Wars saga. His transformation into Darth Vader, his redemption, and
-          his enduring legacy continue to captivate audiences worldwide.
-        </p>
-        <img
-          src="Legacy_Footer_Picture.png"
-          alt="Anakin's Legacy"
-          class="responsive-img lightsaber-img"
-        />
-        <img
-          src="Redlightsaber.jpg"
-          alt="Anakin's Legacy"
-          class="responsive-img lightsaber-img"
-        />
-        <img src="Duel_2.jpg" alt="www.starwars.net" class="responsive-img" />
+        <h2 onclick="toggleContent(1)">Legacy in Star Wars</h2>
+        <div class="column-content">
+          <p>
+            Anakin Skywalker remains one of the most iconic characters in the
+            Star Wars saga. His transformation into Darth Vader, his redemption,
+            and his enduring legacy continue to captivate audiences worldwide.
+          </p>
+          <img
+            src="Legacy_Footer_Picture.png"
+            alt="Anakin's Legacy"
+            class="responsive-img lightsaber-img"
+          />
+          <img
+            src="Redlightsaber.jpg"
+            alt="Anakin's Legacy"
+            class="responsive-img lightsaber-img"
+          />
+          <img src="Duel_2.jpg" alt="www.starwars.net" class="responsive-img" />
+        </div>
       </div>
     </div>
 
@@ -116,5 +140,6 @@
     <div class="footer">
       <p>Every legend has a beginning.</p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -12,28 +12,43 @@
     <title>Path to the darkside</title>
   </head>
   <body id="mainbody">
-    <ul>
-      <div class="header2">
-        <h2>Darth Vader</h2>
-      </div>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="PathToTheDarkside.html">Path to the Dark Side</a></li>
-      <li><a href="Legacy.html">Legacy</a></li>
-      <li class="dropdown">
-        <a class="dropbtn">Explore More</a>
-        <div class="dropdown-content">
-          <a href="https://www.starwars.com" target="_blank"
-            >Star Wars Website</a
-          >
-          <a href="https://starwars.fandom.com/wiki/Main_Page" target="_blank"
-            >Wookiepedia</a
-          >
-          <a href="https://www.reddit.com/r/StarWars/" target="_blank"
-            >Star Wars Reddit</a
-          >
-        </div>
-      </li>
-    </ul>
+    <div class="header2">
+      <h2>Darth Vader</h2>
+    </div>
+    <!-- Desktop Navigation -->
+    <div class="desktop-navbar">
+      <ul class="desktop-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
+        <li><a href="Legacy.html">Legacy</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Explore More</a>
+          <div class="dropdown-content">
+            <a href="https://www.starwars.com">Official Star Wars Website</a>
+            <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
+            <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-navbar">
+      <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
+        <li><a href="Legacy.html">Legacy</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Explore More</a>
+          <div class="dropdown-content">
+            <a href="https://www.starwars.com">Official Star Wars Website</a>
+            <a href="https://starwars.fandom.com/wiki/Main_Page">Wookiepedia</a>
+            <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <marquee
       class="externalLinkMarquee"
@@ -98,22 +113,21 @@
 
     <div class="videoborder" style="text-align: center; margin-top: 40px">
       <p>Key Scene</p>
-      <iframe
-        width="540"
-        height="360"
-        src="https://www.youtube.com/embed/gWnEXsaAc_Y"
-        title="Darth Vader Vs Obi-Wan Kenobi final speech..."
-        frameborder="0"
-        style="border: 35px solid black; border-radius: 50px; overflow: hidden"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      >
-      </iframe>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/gWnEXsaAc_Y"
+          title="Darth Vader Vs Obi-Wan Kenobi final speech..."
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
     <div class="footer">
       <p>Every legend has a beginning.</p>
       <!--1280x720-->
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

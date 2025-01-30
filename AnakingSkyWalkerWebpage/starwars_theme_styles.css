@@ -315,7 +315,7 @@ div.desc {
   gap: 20px; /* Add space between columns */
   padding: 20px;
   border-radius: 15px;
-  background-color: #1a202c; /* Slightly darker overall background */
+  background-color: transparent; /* Slightly darker overall background */
   max-width: 100%; /* Prevent horizontal overflow */
   margin: 0 auto; /* Center the container itself */
   box-sizing: border-box; /* Include padding and borders in the width */

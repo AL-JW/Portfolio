@@ -1,0 +1,236 @@
+.externalLinkMarquee {
+  background-color: #495057; /* Matches the navbar */
+  color: #ffffff; /* White text for contrast */
+  border: 5px solid #b5a642; /* Keep the golden copper border */
+  padding: 10px;
+  margin: 10px auto; /* Center it horizontally */
+  width: 90%; /* Default width */
+  max-width: 1120px; /* Keep it wide for desktop */
+  box-sizing: border-box; /* Prevents padding from affecting width */
+  overflow: hidden; /* Prevents text from breaking layout */
+  text-align: center; /* Ensure text is centered inside */
+  display: flex; /* Ensures proper centering */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  border-radius: 10px; /* Rounded edges for modern look */
+}
+
+@media (max-width: 480px) {
+  .externalLinkMarquee {
+    max-width: 250px; /* Keep it from overflowing on small screens */
+  }
+}
+
+.marquee-text {
+  background-color: #495057; /* Matches the dark gray navbar */
+  color: #ffffff; /* White text for better contrast */
+  font-family: "Crimson Text", serif; /* Keep the existing font */
+  font-size: 22px; /* Slightly smaller for consistency */
+  padding: 10px 20px; /* Add padding for better spacing */
+  border-radius: 10px; /* Rounded edges for modern look */
+  display: inline-block; /* Keep the text confined to its box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add slight shadow for depth */
+}
+
+.header2 {
+  background-image: url("../images/PathToTheDarkside_Header_Picture.png");
+  background-size: cover; /* Ensures the image spans the full width */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center center; /* Centers the image */
+  height: 250px; /* Adjust height as needed */
+  width: calc(100% - 20px); /* Ensures the header fits within the borders */
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border-radius: 15px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  overflow: hidden; /* Prevents content overflow */
+  margin: 0 auto; /* Centers the header horizontally */
+  border: 5px solid #b5a642; /* Optional border to match theme */
+  box-sizing: border-box; /* Includes padding and borders in width calculation */
+  margin-bottom: 20px; /* Add space below the header */
+}
+
+.Homepage_header {
+  background-size: cover; /* Ensures the image spans the full width */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center center; /* Centers the image */
+  height: 250px; /* Adjust height as needed */
+  width: calc(100% - 20px); /* Ensures the header fits within the borders */
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border-radius: 15px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  overflow: hidden; /* Prevents content overflow */
+  margin: 0 auto; /* Centers the header horizontally */
+  border: 5px solid #b5a642; /* Optional border to match theme */
+  box-sizing: border-box; /* Includes padding and borders in width calculation */
+  margin-bottom: 20px; /* Add space below the header */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.header-homepage {
+  background-image: url("../images/Index_Page_Header.png");
+}
+
+.header-legacy {
+  background-image: url("../images/Legacy_Header_Picture.jpg");
+}
+
+.header-darkside {
+  background-image: url("../images/PathToTheDarkside_Header_Picture.png");
+}
+
+/* Adjust Header Size on Mobile */
+@media (max-width: 768px) {
+  .header2 {
+    height: 150px; /* Reduce height for mobile */
+    font-size: 1.8rem; /* Make text smaller */
+    padding: 10px; /* Adjust spacing */
+  }
+}
+
+/* Adjust Header Size on Mobile */
+@media (max-width: 768px) {
+  .Homepage_header {
+    height: 150px; /* Reduce height for mobile */
+    font-size: 1.8rem; /* Make text smaller */
+    padding: 10px; /* Adjust spacing */
+  }
+}
+/* Styling classes for the home page  */
+
+/* General Container for Layout */
+.container {
+  display: flex;
+  justify-content: center; /* Center columns horizontally */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  gap: 20px; /* Add space between columns */
+  padding: 20px;
+  border-radius: 15px;
+  background-color: transparent; /* Slightly darker overall background */
+  max-width: 100%; /* Prevent horizontal overflow */
+  margin: 0 auto; /* Center the container itself */
+  box-sizing: border-box; /* Include padding and borders in the width */
+}
+
+/* Column Styling */
+.column {
+  flex: 1 1 30%; /* Columns adjust based on available space */
+  min-width: 300px; /* Ensures columns don't shrink too much */
+  max-width: 32%; /* Limits column width */
+  background-color: #2c3e50;
+  color: #ffffff;
+  border: 5px solid #b5a642;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Align content to the left for readability */
+  margin-bottom: 20px; /* Add spacing between rows */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content vertically */
+}
+
+/* Specific Column Variants */
+.column2,
+.column3 {
+  background-color: #3a4751;
+}
+
+.interestingFacts {
+  font-size: 16px; /* Larger font for better readability */
+  font-family: "Crimson Text", serif; /* Match the theme's main font */
+  color: #ffffff; /* White text for good contrast */
+  background: #343a40; /* Dark gray background to align with the theme */
+  border: 3px solid #b5a642; /* Golden dashed border for a Star Wars-inspired look */
+  padding: 20px; /* More padding for better spacing */
+  margin: 15px 0; /* Slightly larger vertical margins */
+  border-radius: 10px; /* Smooth rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  line-height: 1.6; /* Add line spacing for readability */
+}
+
+.interestingFacts li {
+  margin-bottom: 10px; /* Spacing between items */
+  padding: 10px;
+  background-color: #343a40; /* Dark background for list items */
+  color: #ffffff; /* White text */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for the entire list */
+.interestingFacts:hover {
+  transform: scale(1.05); /* Enlarges the entire list */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.interestingFacts li::before {
+  content: "★"; /* Use a star or any desired symbol */
+  font-size: 18px;
+  color: #ffdd57;
+  margin-right: 10px;
+}
+/*Mobile column dropdowns*/
+
+/* Initially hide column content */
+.column-content {
+  max-height: none; /* Content is always visible on desktop */
+  overflow: visible;
+  padding: 20px;
+}
+/* Apply dropdown effect ONLY on mobile screens */
+@media (max-width: 768px) {
+  /* Hide column content by default on mobile */
+  .column-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0; /* No padding when collapsed */
+  }
+}
+
+/* When content is visible */
+.column-content.active {
+  max-height: none; /* Large enough to fit all content */
+  overflow: visible; /* Allow images to display fully */
+}
+
+/* Optional styling for headers to indicate interactivity */
+.column h2 {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.column h2:hover {
+  background-color: #b5a642; /* Highlight on hover */
+}
+
+/* Style for a the path to darkside video */
+
+.video-container {
+  position: relative;
+  width: 100%; /* Full width */
+  max-width: 540px; /* Prevent it from getting too large */
+  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  margin: 0 auto; /* Center the video */
+  border: 10px solid #b5a642; /* Reduce border thickness */
+  border-radius: 25px; /* Softer rounded edges */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make iframe fill the container */
+  height: 100%;
+}

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="../css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="starwars_theme_styles.css" />
     <!-- Imported the CSS file for the Star Wars theme-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- Imported these from google fonts for Star Wars themed fonts-->
@@ -12,14 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Syncopate&display=swap"
       rel="stylesheet"
     />
-
     <title>Home Page</title>
   </head>
   <body id="mainbody">
@@ -42,10 +39,10 @@
         </li>
       </ul>
     </div>
-
     <!-- Mobile Navigation -->
-    <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+
     <div class="mobile-navbar">
+      <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
       <ul class="mobile-nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="PathToTheDarkside.html">Path to the Darkside</a></li>
@@ -60,7 +57,6 @@
         </li>
       </ul>
     </div>
-
     <div class="container">
       <div class="column">
         <h2 onclick="toggleContent(0)">
@@ -74,18 +70,17 @@
             leading the purge of the Jedi.
           </p>
           <img
-            src="Homepage_Lightsaber_Picture.png"
+            src="../images/Homepage_Lightsaber_Picture.png"
             alt="www.starwars.net"
             class="responsive-img"
           />
           <img
-            src="Saber_1.jpg"
+            src="../images/Saber_1.jpg"
             alt="www.starwars.net"
             class="responsive-img"
           />
         </div>
       </div>
-
       <div class="column column2">
         <h2 onclick="toggleContent(1)">Discover More About Anakin Skywalker</h2>
         <div class="column-content">
@@ -98,7 +93,11 @@
               Dive into the Legacy
             </a>
           </div>
-          <img src="Duel.jpg" alt="Anakin's Journey" class="responsive-img" />
+          <img
+            src="../images/Duel.jpg"
+            alt="Anakin's Journey"
+            class="responsive-img"
+          />
           <div class="lightsaber-container">
             <h3>Activate a Lightsaber!</h3>
             <div class="lightsaber">
@@ -153,20 +152,28 @@
               dispatch it swiftly.
             </li>
           </ul>
-          <img src="Duel_2.jpg" alt="www.starwars.net" class="responsive-img" />
+          <img
+            src="../images/Duel_2.jpg"
+            alt="www.starwars.net"
+            class="responsive-img"
+          />
         </div>
       </div>
     </div>
 
     <div class="footer-img-container">
       <a href="https://www.youtube.com/watch?v=Hpz9gA_1oLM" target="_blank">
-        <img src="anakin_2.jpg" alt="www.starwars.net" class="footer-img" />
+        <img
+          src="../images/anakin_2.jpg"
+          alt="www.starwars.net"
+          class="footer-img"
+        />
         <div class="click-me-overlay">Click me!</div>
       </a>
     </div>
     <div class="footer">
       <p>Every legend has a beginning.</p>
     </div>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

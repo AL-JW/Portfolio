@@ -1,0 +1,56 @@
+h1::first-letter {
+  color: #c0c0c0;
+  font-size: xx-large;
+}
+/* Typography */
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  color: #ffdd57; /* Golden-yellow for headings */
+  margin-bottom: 10px;
+  text-align: center; /* Center headings for consistency */
+}
+.Homepage_header h2 {
+  font-size: 4em; /* Adjust the size as needed */
+  line-height: 1; /* Adjust line-height to center vertically */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  position: relative; /* Allows for top adjustment */
+  top: 70px; /* Adjust this value to move the text up or down */
+}
+
+.header2 h2 {
+  font-size: 4em; /* Adjust the size as needed */
+  line-height: 1; /* Adjust line-height to center vertically */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  position: relative; /* Allows for top adjustment */
+  top: 70px; /* Adjust this value to move the text up or down */
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+  .Homepage_header h2 {
+    font-size: 2em; /* Reduce size for mobile */
+    top: 30px; /* Move text up slightly */
+  }
+  .header2 h2 {
+    font-size: 2em; /* Reduce size for mobile */
+    top: 35px; /* Move text up slightly */
+  }
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+  .Homepage_header.header-legacy h2 {
+    font-size: 1em; /* Smaller size for mobile */
+    top: 40px; /* Move text up slightly */
+  }
+}
+
+p,
+li {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6; /* Improves text readability */
+  margin-bottom: 10px;
+}

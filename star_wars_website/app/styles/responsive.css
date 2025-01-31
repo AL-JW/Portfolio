@@ -1,0 +1,63 @@
+/* Responsive Image and Iframe */
+.responsive-img {
+  width: 100%; /* Image scales to container width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Smooth corners */
+  border: 4px solid #ffdd57; /* Adds a yellow border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+/* Hover Effect for Homepage Image */
+.responsive-img:hover {
+  transform: scale(1.1); /* Slight zoom-in effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+  border-color: #ffdd57; /* Changes border to yellow on hover */
+}
+
+.responsive-iframe {
+  width: 100%;
+  height: 250px; /* Scales properly for videos */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+/* Styling for mobile devices with smaller screens */
+/* Media Queries for Tablet Screens (768px or smaller) */
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 45%; /* Two columns on tablets */
+  }
+}
+
+/* Media Queries for Mobile Screens (480px or smaller) */
+@media (max-width: 480px) {
+  .column {
+    flex: 1 1 100%; /* Single column on small devices */
+  }
+}
+
+@media (max-width: 768px) {
+  .Homepage_header h2 {
+    font-size: 2.5rem; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .Homepage_header h2 {
+    font-size: 1.8rem; /* Smaller font size for phones */
+    padding: 10px; /* Reduce padding for better fit */
+  }
+}
+
+@media (max-width: 768px) {
+  .header2 h2 {
+    font-size: 2.5rem; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .header2 h2 {
+    font-size: 1.8rem; /* Smaller font size for phones */
+    padding: 10px; /* Reduce padding for better fit */
+  }
+}

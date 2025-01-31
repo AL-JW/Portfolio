@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import "./styles/styles.css"; // Import the homepage styles
+
 import Script from "next/script";
 
 export default function HomePage() {
@@ -83,12 +86,14 @@ export default function HomePage() {
               alt="Lightsaber"
               width={400}
               height={300}
+              className="responsive-img"
             />
             <Image
               src="/images/Saber_1.jpg"
               alt="Saber"
               width={400}
               height={300}
+              className="responsive-img"
             />
           </div>
         </div>
@@ -110,6 +115,7 @@ export default function HomePage() {
               alt="Anakin's Journey"
               width={400}
               height={300}
+              className="responsive-img"
             />
             <div className="lightsaber-container">
               <h3>Activate a Lightsaber!</h3>
@@ -162,6 +168,7 @@ export default function HomePage() {
               alt="Duel"
               width={400}
               height={300}
+              className="responsive-img"
             />
           </div>
         </div>
@@ -175,6 +182,7 @@ export default function HomePage() {
             alt="Anakin"
             width={400}
             height={300}
+            className="footer-img"
           />
           <div className="click-me-overlay">Click me!</div>
         </a>

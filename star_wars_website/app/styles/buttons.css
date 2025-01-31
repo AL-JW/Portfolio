@@ -1,0 +1,25 @@
+/* Home Page - Video Button Section */
+.video-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Button Styling */
+.video-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #ffdd57;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* Button Hover Effect */
+.video-button:hover {
+  background-color: #e6c84a;
+  transform: scale(1.05);
+}

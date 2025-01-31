@@ -1,0 +1,54 @@
+/* Footer Styling */
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #1a1a2e; /* Unified background color */
+  color: #ffdd57;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-top: 2px solid #b5a642;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+  border-radius: 15px;
+}
+
+/* Footer Image Styling */
+.footer-img-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.footer-img {
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid #ffdd57;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Footer Image */
+.footer-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  border-color: #ffdd57;
+}
+
+/* Click Me Overlay */
+.click-me-overlay {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none;
+}

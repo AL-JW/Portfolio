@@ -1,6 +1,6 @@
 let lightsaberActive = false; // Track whether the lightsaber is active or sheathed
 
-function toggleLightsaber() {
+window.toggleLightsaber = function () {
   const blade = document.querySelector(".blade");
 
   if (lightsaberActive) {
@@ -12,9 +12,9 @@ function toggleLightsaber() {
     blade.style.height = "200px"; // Adjust height as needed
     lightsaberActive = true; // Update state
   }
-}
+};
 
-function changeBladeColor(color) {
+window.changeBladeColor = function (color) {
   const blade = document.querySelector(".blade");
   const notification = document.getElementById("notification");
 
@@ -37,16 +37,11 @@ function changeBladeColor(color) {
 
   // Update the blade color dynamically
   blade.style.setProperty("--blade-color", color);
-}
-
-function toggleMobileMenu() {
-  const navLinks = document.querySelector(".mobile-nav-links");
-  navLinks.classList.toggle("show");
-}
+};
 
 /* Toggle for column dropdowns*/
 
-function toggleContent(index) {
+window.toggleContent = function (index) {
   // Check if screen size is mobile (768px or smaller)
   if (window.innerWidth > 768) {
     return; // Do nothing if it's desktop
@@ -70,32 +65,11 @@ function toggleContent(index) {
     selectedContent.style.maxHeight = selectedContent.scrollHeight + "px";
     selectedContent.classList.add("active");
   }
-}
+};
 
 /* Javascript function for the mobile view explore more dropdown button */
 
-function toggleMobileMenu() {
+window.toggleMobileMenu = function () {
   const navLinks = document.querySelector(".mobile-nav-links");
   navLinks.classList.toggle("show");
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  const mobileDropbtn = document.querySelector(".mobile-dropbtn");
-  const mobileDropdownContent = document.querySelector(
-    ".mobile-dropdown-content"
-  );
-
-  mobileDropbtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    mobileDropdownContent.classList.toggle("show");
-  });
-
-  document.addEventListener("click", function (event) {
-    if (
-      !mobileDropbtn.contains(event.target) &&
-      !mobileDropdownContent.contains(event.target)
-    ) {
-      mobileDropdownContent.classList.remove("show");
-    }
-  });
-});
+};

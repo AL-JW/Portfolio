@@ -1,13 +1,27 @@
 "use client";
 
+import { useState, useEffect } from "react"; // ✅ Ensures JavaScript runs only on the client
 import Image from "next/image";
 import Link from "next/link";
-
 import "./styles/styles.css"; // Import the homepage styles
-
 import Script from "next/script";
 
 export default function HomePage() {
+  const [dropdownOpen, setDropdownOpen] = useState(false); // ✅ NEW state for "Explore More"
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.toggleLightsaber = window.toggleLightsaber || function () {};
+      window.toggleContent = window.toggleContent || function () {};
+      window.toggleMobileMenu = window.toggleMobileMenu || function () {};
+      window.changeBladeColor = window.changeBladeColor || function () {};
+    }
+  }, []);
+
   return (
     <main>
       {/* Header */}
@@ -22,19 +36,35 @@ export default function HomePage() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/PathToTheDarkside">Path to the Darkside</Link>
+            <Link href="/pathtothedarkside">Path to the Darkside</Link>
           </li>
           <li>
-            <Link href="/Legacy">Legacy</Link>
+            <Link href="/legacy">Legacy</Link>
           </li>
           <li className="dropdown">
             <span className="dropbtn">Explore More</span>
             <div className="dropdown-content">
-              <a href="https://www.starwars.com">Official Star Wars Website</a>
-              <a href="https://starwars.fandom.com/wiki/Main_Page">
+              <a
+                href="https://www.starwars.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official Star Wars Website
+              </a>
+              <a
+                href="https://starwars.fandom.com/wiki/Main_Page"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Wookiepedia
               </a>
-              <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+              <a
+                href="https://www.reddit.com/r/StarWars/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Star Wars Reddit
+              </a>
             </div>
           </li>
         </ul>
@@ -42,7 +72,7 @@ export default function HomePage() {
 
       {/* Mobile Navigation */}
       <nav className="mobile-navbar">
-        <button className="hamburger" onClick={() => toggleMobileMenu()}>
+        <button className="hamburger" onClick={() => window.toggleMobileMenu()}>
           ☰
         </button>
         <ul className="mobile-nav-links">
@@ -50,19 +80,41 @@ export default function HomePage() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/PathToTheDarkside">Path to the Darkside</Link>
+            <Link href="/pathtothedarkside">Path to the Darkside</Link>
           </li>
           <li>
-            <Link href="/Legacy">Legacy</Link>
+            <Link href="/legacy">Legacy</Link>
           </li>
           <li className="mobile-dropdown">
-            <span className="mobile-dropbtn">Explore More</span>
-            <div className="mobile-dropdown-content">
-              <a href="https://www.starwars.com">Official Star Wars Website</a>
-              <a href="https://starwars.fandom.com/wiki/Main_Page">
+            <span className="mobile-dropbtn" onClick={toggleDropdown}>
+              Explore More
+            </span>
+            <div
+              className={`mobile-dropdown-content ${
+                dropdownOpen ? "show" : ""
+              }`}
+            >
+              <a
+                href="https://www.starwars.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official Star Wars Website
+              </a>
+              <a
+                href="https://starwars.fandom.com/wiki/Main_Page"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Wookiepedia
               </a>
-              <a href="https://www.reddit.com/r/StarWars/">Star Wars Reddit</a>
+              <a
+                href="https://www.reddit.com/r/StarWars/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Star Wars Reddit
+              </a>
             </div>
           </li>
         </ul>
@@ -71,7 +123,7 @@ export default function HomePage() {
       {/* Content Sections */}
       <div className="container">
         <div className="column">
-          <h2 onClick={() => toggleContent(0)}>
+          <h2 onClick={() => window.toggleContent(0)}>
             Anakin Skywalker: Origins and Backstory
           </h2>
           <div className="column-content">
@@ -99,7 +151,7 @@ export default function HomePage() {
         </div>
 
         <div className="column column2">
-          <h2 onClick={() => toggleContent(1)}>
+          <h2 onClick={() => window.toggleContent(1)}>
             Discover More About Anakin Skywalker
           </h2>
           <div className="column-content">
@@ -123,19 +175,24 @@ export default function HomePage() {
                 <div className="hilt"></div>
                 <div className="blade"></div>
               </div>
-              <button onClick={() => toggleLightsaber()}>Activate</button>
+              <button onClick={() => window.toggleLightsaber()}>
+                Activate
+              </button>
+
               <div className="color-buttons">
-                <button onClick={() => changeBladeColor("#E74C3C")}>Red</button>
-                <button onClick={() => changeBladeColor("#2874A6")}>
+                <button onClick={() => window.changeBladeColor("#E74C3C")}>
+                  Red
+                </button>
+                <button onClick={() => window.changeBladeColor("#2874A6")}>
                   Blue
                 </button>
-                <button onClick={() => changeBladeColor("#2ECC71")}>
+                <button onClick={() => window.changeBladeColor("#2ECC71")}>
                   Green
                 </button>
-                <button onClick={() => changeBladeColor("#F1C40F")}>
+                <button onClick={() => window.changeBladeColor("#F1C40F")}>
                   Yellow
                 </button>
-                <button onClick={() => changeBladeColor("#AF7AC5")}>
+                <button onClick={() => window.changeBladeColor("#AF7AC5")}>
                   Purple
                 </button>
               </div>
@@ -145,7 +202,7 @@ export default function HomePage() {
         </div>
 
         <div className="column column3">
-          <h2 onClick={() => toggleContent(2)}>
+          <h2 onClick={() => window.toggleContent(2)}>
             Interesting Facts About Anakin Skywalker:
           </h2>
           <div className="column-content">

@@ -106,6 +106,7 @@ li.dropdown {
   background-color: transparent;
   transform: scaleY(0);
   transition: transform 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  position: relative;
 }
 
 /* Show when active */
@@ -128,25 +129,6 @@ li.dropdown {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-}
-
-/* Ensure dropdown stays inside screen */
-.mobile-dropdown-content {
-  display: none;
-  flex-direction: column;
-  width: 100%; /* Full width */
-  background: #222;
-  padding: 10px;
-  position: relative;
-}
-
-.mobile-dropdown-content a {
-  padding: 10px;
-  text-align: center;
-}
-
-.mobile-dropdown-content.show {
-  display: flex;
 }
 
 /* Hamburger Button */
@@ -173,12 +155,13 @@ li.dropdown {
 
 .mobile-dropdown {
   position: relative;
-  display: inline-block; /* Matches desktop styling */
+
+  width: 100%;
 }
 
 .mobile-dropdown-content {
   display: flex;
-  position: absolute;
+  position: relative;
   flex-direction: column;
   background: transparent;
   border-radius: 10px;
@@ -188,13 +171,23 @@ li.dropdown {
   background-color: #343a40; /* Dark background */
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  max-width: 250px; /* Prevents it from getting too wide */
+
+  box-sizing: border-box; /* ensure padding doesn’t overflow */
 }
 
 /* When active, expand dropdown and add padding */
 .mobile-dropdown-content.show {
-  max-height: 300px; /* Adjust to fit content */
+  display: block; /* Now it becomes visible */
+  padding: 0px; /* Adds space while open */
+  max-height: 250px; /* Expand to fit content */
+}
+
+.mobile-dropdown-content a {
   padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border: 2px solid #d4d4d4; /* Soft Silver */
+  border-radius: 0px;
 }
 
 /* Ensure dropdown expands properly in mobile view */
@@ -202,6 +195,7 @@ li.dropdown {
   .mobile-dropdown-content {
     width: 100%;
     position: relative; /* Ensure it follows the flow of the page */
+    box-sizing: border-box; /* ensure padding doesn’t overflow */
   }
 }
 /* Smooth dropdown effect */
@@ -216,8 +210,12 @@ li.dropdown {
   }
 }
 
-/* Mobile menu should have relative positioning */
-.mobile-dropdown {
-  position: relative;
+/* Fix button size */
+.mobile-dropbtn {
+  display: block;
   width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
 }

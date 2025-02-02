@@ -24,27 +24,37 @@ export default function Legacy() {
           window.toggleMobileMenu ||
           function () {
             const navLinks = document.querySelector(".mobile-nav-links");
-            navLinks.classList.toggle("show");
+
+            // ✅ Ensure navLinks exists before toggling
+            if (navLinks) {
+              navLinks.classList.toggle("show");
+            } else {
+              console.warn("Warning: .mobile-nav-links not found in the DOM.");
+            }
           };
 
         window.toggleContent =
           window.toggleContent ||
           function (index) {
             if (window.innerWidth > 768) return;
-            const contents = document.querySelectorAll(".column-content");
-            const selectedContent = contents[index];
 
-            if (selectedContent.classList.contains("active")) {
-              selectedContent.style.maxHeight = null;
-              selectedContent.classList.remove("active");
+            const contents = document.querySelectorAll(".column-content");
+            const selectedContent = contents[index] as HTMLElement; // ✅ Fix: Cast to HTMLElement
+
+            if (selectedContent) {
+              if (selectedContent.classList.contains("active")) {
+                selectedContent.style.maxHeight = ""; // ✅ Fix: Use empty string instead of null
+                selectedContent.classList.remove("active");
+              } else {
+                contents.forEach((content) => {
+                  (content as HTMLElement).style.maxHeight = ""; // ✅ Also fix here
+                  content.classList.remove("active");
+                });
+                selectedContent.style.maxHeight = `${selectedContent.scrollHeight}px`;
+                selectedContent.classList.add("active");
+              }
             } else {
-              contents.forEach((content) => {
-                content.style.maxHeight = null;
-                content.classList.remove("active");
-              });
-              selectedContent.style.maxHeight =
-                selectedContent.scrollHeight + "px";
-              selectedContent.classList.add("active");
+              console.warn(`Warning: No content found for index ${index}`);
             }
           };
 

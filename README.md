@@ -4,23 +4,32 @@ Welcome to my portfolio repository! This repository contains all my key projects
 
 ---
 
-## Projects
+## Projects  
 
-### <a href="https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/pages" target="_blank">1. Project 1: Simple Biography Webpage.</a>
-*(Tip: Use Ctrl+Click or Cmd+Click to open in a new tab!)*
+### 1. Simple Biography Webpage  
+*(Tip: Use Ctrl+Click or Cmd+Click to open in a new tab!)*  
 
+🔗 **Static Version:** [Live on GitHub Pages](https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/pages)  
+🔗 **Next.js Version:** [Live on (Vercel/Other Hosting)](https://skywalked.com/)  
 
+#### Description  
+A simple biography webpage that provides information about a fictional character while showcasing my front-end web development skills. Originally built using **HTML, CSS, and JavaScript**, I later improved the project by rebuilding it with **Next.js**, leveraging React for better performance and scalability.  
 
-- **Description**: A simple website using html, css, javascript, that gives a little information about a fictional character and showvcases some of my web design skills.
-- **Features**:
-  - CSS 
-  - HTML
-  - Javascript
-  - Built with React
-  - Nav Bar
-  - Multiple Pages
-  - External Links
-  - Styling
+#### Features  
+
+✅ **Static Version:**  
+- HTML, CSS, JavaScript  
+- Multi-page navigation  
+- Styled layout and responsive design  
+- External links  
+
+✅ **Next.js Version:**  
+- Built with React & Next.js
+- Custom domain name
+- Improved performance with client-side rendering  
+- Modular component structure  
+- Enhanced styling and maintainability  
+
 
 ---
 

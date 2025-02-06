@@ -53,7 +53,7 @@ A simple biography webpage that provides information about a fictional character
 
 ---
 ### [4. Project 4: Generic Advertisement Website with Navigation Bar and External links. ](https://yourusername.github.io/portfolio/project3/)
-- **Description**: A website that someone could use to advertise their business or themselves with multiple different pages for different information.
+- **Description**: This project was built using HTML, CSS, and Vanilla JavaScript, without any frameworks.
 - **Features**:
   - Drop Down Navigation Bar.
   - Headers and Footers.

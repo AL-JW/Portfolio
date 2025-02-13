@@ -62,7 +62,7 @@ A simple biography webpage that provides information about a fictional character
   - Creative Styling.
  
 ---
-### [5. Dog Training Website]([https://yourusername.github.io/portfolio/dog-training/](https://bark-base-website.vercel.app/))
+### [5. Dog Training Website](https://bark-base-website.vercel.app/)
 - **Description**: A hypothetical dog training website built with **React** and **Material UI**. This project showcases a professional and user-friendly design for a dog training business.
 - **Features**:
   - Clean and responsive UI using **Material UI components**.

@@ -44,7 +44,7 @@ A simple biography webpage that provides information about a fictional character
 
 ---
 
-### [3. Project 3: Economic Data Visualization (Capstone Project) ](https://yourusername.github.io/portfolio/project3/)
+### [3. Project 3: Economic Data Visualization (Capstone Project) ](https://www.wisconsinrapidschamber.com/local-economic-data/)
 - **Description**: A Economic Data Visualizer I created to showcase Data for Wisconsin Rapids Chamber of Commerce. 
 - **Features**:
   - Interactive Graphs to better understand economic data in the given counties. 

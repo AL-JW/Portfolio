@@ -4,23 +4,32 @@ Welcome to my portfolio repository! This repository contains all my key projects
 
 ---
 
-## Projects
+## Projects  
 
-### <a href="https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/" target="_blank">1. Project 1: Simple Biography Webpage.</a>
-*(Tip: Use Ctrl+Click or Cmd+Click to open in a new tab!)*
+### 1. Simple Biography Webpage  
+*(Tip: Use Ctrl+Click or Cmd+Click to open in a new tab!)*  
 
+🔗 **Static Version:** [Live on GitHub Pages](https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/pages)  
+🔗 **Next.js Version:** [Live on Vercel](https://skywalked.com/)  
 
+#### Description  
+A simple biography webpage that provides information about a fictional character while showcasing my front-end web development skills. Originally built using **HTML, CSS, and JavaScript**, I later improved the project by rebuilding it with **Next.js**, leveraging React for better performance and scalability.  
 
-- **Description**: A simple website using html, css, javascript, that gives a little information about a fictional character and showvcases some of my web design skills.
-- **Features**:
-  - CSS 
-  - HTML
-  - Javascript
-  - Built with React
-  - Nav Bar
-  - Multiple Pages
-  - External Links
-  - Styling
+#### Features  
+
+✅ **Static Version:**  
+- HTML, CSS, JavaScript  
+- Multi-page navigation  
+- Styled layout and responsive design  
+- External links  
+
+✅ **Next.js Version:**  
+- Built with React & Next.js
+- Custom domain name
+- Improved performance with client-side rendering  
+- Modular component structure  
+- Enhanced styling and maintainability  
+
 
 ---
 
@@ -44,7 +53,7 @@ Welcome to my portfolio repository! This repository contains all my key projects
 
 ---
 ### [4. Project 4: Generic Advertisement Website with Navigation Bar and External links. ](https://yourusername.github.io/portfolio/project3/)
-- **Description**: A website that someone could use to advertise their business or themselves with multiple different pages for different information.
+- **Description**: This project was built using HTML, CSS, and Vanilla JavaScript, without any frameworks.
 - **Features**:
   - Drop Down Navigation Bar.
   - Headers and Footers.

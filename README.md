@@ -70,8 +70,7 @@ A simple biography webpage that provides information about a fictional character
   - Reusable **React components** for consistency and maintainability.
   - Deployed using **Vercel** for fast and reliable hosting.
 
-🚀 **Live Demo:** [Coming Soon](#)  
-📂 **GitHub Repository:** [Coming Soon](#)
+
 ## How to Clone and Run Locally
 If you'd like to explore these projects locally:
 1. Clone the repository:

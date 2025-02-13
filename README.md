@@ -62,15 +62,16 @@ A simple biography webpage that provides information about a fictional character
   - Creative Styling.
  
 ---
-### [5. Project 5: Card Game Of War ](https://yourusername.github.io/portfolio/project3/)
-- **Description**: A simple Card game application I have created to get more familiar with C#, creating methods, and classes.  
+### [5. Dog Training Website]([https://yourusername.github.io/portfolio/dog-training/](https://bark-base-website.vercel.app/))
+- **Description**: A hypothetical dog training website built with **React** and **Material UI**. This project showcases a professional and user-friendly design for a dog training business.
 - **Features**:
-  -Methods.
-  -Classes.
-  -Inheritence.
-  -Object Oriented Programming.
-  -Shuffle, Draw, Deal, Win, Lose Functionalities. 
+  - Clean and responsive UI using **Material UI components**.
+  - Pages for **Home, About, Services, Training, Testimonials, Gallery, and Contact**.
+  - Reusable **React components** for consistency and maintainability.
+  - Deployed using **Vercel** for fast and reliable hosting.
 
+🚀 **Live Demo:** [Coming Soon](#)  
+📂 **GitHub Repository:** [Coming Soon](#)
 ## How to Clone and Run Locally
 If you'd like to explore these projects locally:
 1. Clone the repository:

@@ -1,71 +1,111 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Extras</title>
 
     <script src="FourFunctions.js"></script>
+  </head>
+  <body>
 
-</head>
-<body>
+<!-- Add a button for the menu, I also really like this nav bar I made because the cool colors it emits with the gradient
+	styling effects (Index Styling 63) -->
+
+    <div class="center-content">
+        <ul class="navbar-ul">
+          <li class="nav-list-item">
+            <a href="Index.html" onclick="navigate(event, 'Index.html')"
+              >Home</a
+            >
+          </li>
+          <!--Modified all the nav bar links with an onclick to call the javascript function when pressed-->
+          <li class="nav-list-item">
+            <a
+              href="AboutMePage.html"
+              onclick="navigate(event, 'AboutMePage.html')"
+              >About</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="Hobbies.html" onclick="navigate(event, 'Hobbies.html')"
+              >Hobbies</a
+            >
+          </li>
+  
+          <!--Line 83 of index styling-->
+          <li class="dropdown">
+            <a class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+              <a href="AnakingSkyWalkerWebpage/index.html">
+                Anakin SkyWalker Webpage</a
+              >
+              <a href="AnakingSkyWalkerWebPage/AnakinCode.txt" target="_blank"
+                >View Code</a
+              >
+              <a href="JS_Countdown_Timer/JS_Countdown_Timer.html">Countdown Timer</a>
+              <a href="JS_Countdown_Timer/Timer.txt">View Code</a>
+              <a href="EasterEggs/Index.html">Bunny Webpage</a>
+              <a href="EasterEggs/EasterBunnyCode.txt">View Code</a>
+            </div>
+          </li>
+  
+         
+          </li>
+          <li class="nav-list-item">
+            <a href="Extras.html" onclick="navigate(event, 'Extras.html')"
+              >JS Functions</a
+            >
+          </li>
+        </ul>
+      </div>
+
 
 
     <h1>Four JavaScript Functions</h1>
 
-    <h3> Let's use the numbers 8 and 8.</h3>
+    <h3>Let's use the numbers 8 and 8.</h3>
 
     <p id="addResult"></p>
     <p id="subtractResult"></p>
     <p id="multiplyResult"></p>
     <p id="divideResult"></p>
 
-
-
     <button onclick="runFunctions()">Run Math Functions</button>
-    
 
     <script>
-
-        function runFunctions() 
-        {
-
-            document.getElementById("addResult").innerHTML = 'Addition ' + add(8,8);
-            document.getElementById("subtractResult").innerHTML = 'Subtraction  ' + subtract(8,8);
-            document.getElementById("multiplyResult").innerHTML = 'Multiply ' + multiply(8,8);
-            document.getElementById("divideResult").innerHTML = 'Division ' + divide(8,8);    
-        }
-
-        
+      function runFunctions() {
+        document.getElementById("addResult").innerHTML =
+          "Addition " + add(8, 8);
+        document.getElementById("subtractResult").innerHTML =
+          "Subtraction  " + subtract(8, 8);
+        document.getElementById("multiplyResult").innerHTML =
+          "Multiply " + multiply(8, 8);
+        document.getElementById("divideResult").innerHTML =
+          "Division " + divide(8, 8);
+      }
     </script>
 
     <!--The first use of the array-->
     <div id="arrayContainer"></div>
-    <input type="text" id="inputField">
+    <input type="text" id="inputField" />
     <button onclick="addToTheArray()">Add stuff to Array</button>
-
 
     <!--The second use of the array-->
     <div id="sumContainer"></div>
     <button onclick="displaySum()">Display The Sum of Array</button>
 
-
     <ul>
-        <li>Eminem</li>
-        <li>Post Malone</li>
-        <li>The Weeknd</li>
-        <li>Maroon 5</li>
-        <li>Linkin Park</li>
-        <li>Five Finger Death Punch</li>
-        <li>Avenged Sevenfold</li>
-        <li>Bullet For My Valentine</li>
+      <li>Rock</li>
+      <li>Metal</li>
+      <li>Jazz</li>
+      <li>Blues</li>
+      <li>Hip-Hop</li>
+      <li>Electronic</li>
+      <li>Classical</li>
+      <li>Reggae</li>
     </ul>
 
-
-
-    <div id = "listContainer"></div>
-    <button onclick = "displayListItems()">Display List items.</button>
-
-   
-
-</body>
+    <div id="listContainer"></div>
+    <button onclick="displayListItems()">Display List items.</button>
+  </body>
 </html>

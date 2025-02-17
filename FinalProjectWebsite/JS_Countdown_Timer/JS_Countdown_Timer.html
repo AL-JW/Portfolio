@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .button {
+        background: #2b2d2f;
+        height: 80px;
+        width: 200px;
+        text-align: center;
+
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      img {
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: 3;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background: purple;
+        transition: width 3s;
+        transition-delay: 0.5s;
+        max-width: 500px;
+        margin: auto;
+      }
+
+      div:hover {
+        width: 300px;
+      }
+
+      .content {
+        max-width: 500px;
+        margin: auto;
+      }
+
+      p {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 0px;
+        background-color: black;
+        color: chocolate;
+      }
+
+      body {
+        background-color: #8c6a13 !important;
+        text-align: center;
+      }
+
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: #300066;
+        color: white;
+        font-size: 30px;
+      }
+
+      .img {
+        content: center;
+        max-width: 500px;
+        margin: auto;
+      }
+    </style>
+    <script type="text/javascript">
+      function MM_preloadImages() {
+        //v3.0
+        var d = document;
+        if (d.images) {
+          if (!d.MM_p) d.MM_p = new Array();
+          var i,
+            j = d.MM_p.length,
+            a = MM_preloadImages.arguments;
+          for (i = 0; i < a.length; i++)
+            if (a[i].indexOf("#") != 0) {
+              d.MM_p[j] = new Image();
+              d.MM_p[j++].src = a[i];
+            }
+        }
+      }
+
+      function MM_swapImgRestore() {
+        //v3.0
+        var i,
+          x,
+          a = document.MM_sr;
+        for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++)
+          x.src = x.oSrc;
+      }
+
+      function MM_findObj(n, d) {
+        //v4.01
+        var p, i, x;
+        if (!d) d = document;
+        if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+          d = parent.frames[n.substring(p + 1)].document;
+          n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n];
+        for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++)
+          x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n);
+        return x;
+      }
+
+      function MM_swapImage() {
+        //v3.0
+        var i,
+          j = 0,
+          x,
+          a = MM_swapImage.arguments;
+        document.MM_sr = new Array();
+        for (i = 0; i < a.length - 2; i += 3)
+          if ((x = MM_findObj(a[i])) != null) {
+            document.MM_sr[j++] = x;
+            if (!x.oSrc) x.oSrc = x.src;
+            x.src = a[i + 2];
+          }
+      }
+    </script>
+  </head>
+
+  <body onLoad="MM_preloadImages('Webpage_Edges.JPG')">
+    <header class="header">Countdown Date (Random):</header>
+
+    <p id="demo"></p>
+
+    <img
+      src="Webpage_Edges.JPG"
+      alt=""
+      width="693"
+      height="435"
+      class="img"
+      id="Image1"
+      onMouseOver="MM_swapImage('Image1','','Person_Image.JPG',1)"
+      onMouseOut="MM_swapImgRestore()"
+    />
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("May 15, 2025 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+
+      window.alert("This page is a random JS countdown timer.");
+    </script>
+
+    <p>This page is about a countdown</p>
+
+    <br /><br />
+
+    <button class="button" type="button" onclick="document.write(2025)">
+      Click here to finish countdown right now.
+    </button>
+
+    <br /><br />
+  </body>
+</html>

@@ -52,7 +52,7 @@ A simple biography webpage that provides information about a fictional character
   - Integrated into the chambers website so users are able to click right to it. 
 
 ---
-### [4. Project 4: General Webpage for a personal website. ](https://yourusername.github.io/portfolio/project3/)
+### [4. Project 4: General Webpage for a personal website. ]([https://yourusername.github.io/portfolio/project3/](https://al-jw.github.io/Portfolio/FinalProjectWebsite/Index.html))
 - **Description**: This project was a school assignment final project built using HTML, CSS, and Vanilla JavaScript, without any frameworks.
 - **Features**:
   - Drop Down Navigation Bar.

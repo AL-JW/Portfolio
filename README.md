@@ -52,14 +52,12 @@ A simple biography webpage that provides information about a fictional character
   - Integrated into the chambers website so users are able to click right to it. 
 
 ---
-### [4. Project 4: Generic Advertisement Website with Navigation Bar and External links. ](https://yourusername.github.io/portfolio/project3/)
-- **Description**: This project was built using HTML, CSS, and Vanilla JavaScript, without any frameworks.
+### [4. Project 4: General Webpage for a personal website. ](https://yourusername.github.io/portfolio/project3/)
+- **Description**: This project was a school assignment final project built using HTML, CSS, and Vanilla JavaScript, without any frameworks.
 - **Features**:
   - Drop Down Navigation Bar.
   - Headers and Footers.
-  - A form you are able to submit.
-  - External links on a drop down.
-  - Creative Styling.
+  - External links on a drop down with other early projects I've worked on. 
  
 ---
 ### [5. Dog Training Website](https://bark-base-website.vercel.app/)

@@ -1,7 +1,7 @@
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import { Typography, Box, IconButton } from "@mui/material";
 import Link from "next/link";
-import { dancingScript, greatvibes, poppins } from "./layout"; // Import fonts
+import { dancingScript, greatVibes, poppins } from "./fonts"; // Import fonts
 
 export default function Home() {
   return (
@@ -35,7 +35,7 @@ export default function Home() {
       >
         <Typography
           variant="h2"
-          sx={{ fontFamily: greatvibes.style.fontFamily, color: "#C9A34C" }}
+          sx={{ fontFamily: greatVibes.style.fontFamily, color: "#C9A34C" }}
           className="text-4xl sm:text-5xl md:text-6xl"
         >
           Alexander W.

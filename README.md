@@ -41,9 +41,9 @@ Welcome to my portfolio repository! This repository contains all my key projects
 ### 4. Simple Biography Webpage  
 *(Tip: Use Ctrl+Click or Cmd+Click to open in a new tab!)*  
 
-   **Next.js Version:** [Live on Vercel](https://skywalked.com/)  
+🔗 **Next.js Version:** [Live on Vercel](https://skywalked.com/)  
 🔗 **Static Version:** [Live on GitHub Pages](https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/pages)  
-🔗
+
 #### Description  
 A simple biography webpage that provides information about a fictional character while showcasing my front-end web development skills. Originally built using **HTML, CSS, and JavaScript**, I later improved the project by rebuilding it with **Next.js**, leveraging React for better performance and scalability.  
 

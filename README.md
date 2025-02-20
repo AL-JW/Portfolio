@@ -33,7 +33,7 @@ A simple biography webpage that provides information about a fictional character
 
 ---
 
-### [2. Project 2: Fitness App](https://yourusername.github.io/portfolio/project2/)
+### [2. Project 2: Fitness App](https://workouttrackingapp20250220105137.azurewebsites.net/)
 - **Description**: A full stack Fittness Application where a user can track their workouts over time.
 - **Features**:
   - Exercises to view, and workouts to view.

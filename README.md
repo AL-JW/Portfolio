@@ -8,12 +8,14 @@ Welcome to my portfolio repository! This repository contains all my key projects
 
 
 ### [1. Project 1: My personal website](https://www.alexanderw.dev/)
-- **Description**: A full stack Fittness Application where a user can track their workouts over time.
+- **Description**: I built this to show I am capable of building modern efficient applications using frameworks like Next.js Check out the github and linkedIn links.
 - **Features**:
-  - Exercises to view, and workouts to view.
-  - Trackable workouts you can save to your account over time. 
-  - Secure Login and Account creation functionality.
-  - Password Reset.
+  - Created with Next.js
+  - Used Martial UI for styling
+  - Tailwind CSS for styling
+  - Hosted on Vercel
+  - Has a custom domain 
+  - Very simple icon features and styling 
   - Messaging personal trainers.
 
 ---
@@ -39,19 +41,13 @@ Welcome to my portfolio repository! This repository contains all my key projects
 ### 4. Simple Biography Webpage  
 *(Tip: Use Ctrl+Click or Cmd+Click to open in a new tab!)*  
 
+   **Next.js Version:** [Live on Vercel](https://skywalked.com/)  
 🔗 **Static Version:** [Live on GitHub Pages](https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/pages)  
-🔗 **Next.js Version:** [Live on Vercel](https://skywalked.com/)  
-
+🔗
 #### Description  
 A simple biography webpage that provides information about a fictional character while showcasing my front-end web development skills. Originally built using **HTML, CSS, and JavaScript**, I later improved the project by rebuilding it with **Next.js**, leveraging React for better performance and scalability.  
 
 #### Features  
-
-✅ **Static Version:**  
-- HTML, CSS, JavaScript  
-- Multi-page navigation  
-- Styled layout and responsive design  
-- External links  
 
 ✅ **Next.js Version:**  
 - Built with React & Next.js
@@ -59,7 +55,13 @@ A simple biography webpage that provides information about a fictional character
 - Improved performance with client-side rendering  
 - Modular component structure  
 - Enhanced styling and maintainability
-- 
+
+✅ **Static Version:**  
+- HTML, CSS, JavaScript  
+- Multi-page navigation  
+- Styled layout and responsive design  
+- External links  
+
 ---
 ### [5. Dog Training Website](https://bark-base-website.vercel.app/)
 - **Description**: A hypothetical dog training website built with **React** and **Material UI**. This project showcases a professional and user-friendly design for a dog training business.

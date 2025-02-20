@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6oAewVSTco8=",
+  "dgSpecHash": "h8cDIwey8zk=",
   "success": true,
-  "projectFilePath": "X:\\Fitness_App\\CIS341_Checkpoint3\\FitnessApp.UnitTests\\FitnessApp.UnitTests.csproj",
+  "projectFilePath": "X:\\Portfolio\\Fitness_App_Final\\FitnessApp.UnitTests\\FitnessApp.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\The Rookie\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\The Rookie\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -250,10 +250,7 @@
     "C:\\Users\\The Rookie\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\The Rookie\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\The Rookie\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\The Rookie\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "C:\\Users\\The Rookie\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\The Rookie\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\The Rookie\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+    "C:\\Users\\The Rookie\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
   "logs": []
 }

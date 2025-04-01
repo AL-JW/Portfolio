@@ -38,29 +38,7 @@ Welcome to my portfolio repository! This repository contains all my key projects
   - Password Reset.
   - Messaging personal trainers.
 
-### 4. [4. Project 4: Simple Biography Webpage](https://skywalked.com/)
-*(Tip: Use Ctrl+Click or Cmd+Click to open in a new tab!)*  
 
-🔗 **Next.js Version:** [Live on Vercel](https://skywalked.com/)  
-🔗 **Static Version:** [Live on GitHub Pages](https://al-jw.github.io/Portfolio/AnakingSkyWalkerWebpage/pages)  
-
-#### Description  
-A simple biography webpage that provides information about a fictional character while showcasing my front-end web development skills. Originally built using **HTML, CSS, and JavaScript**, I later improved the project by rebuilding it with **Next.js**, leveraging React for better performance and scalability.  
-
-#### Features  
-
-✅ **Next.js Version:**  
-- Built with React & Next.js
-- Custom domain name
-- Improved performance with client-side rendering  
-- Modular component structure  
-- Enhanced styling and maintainability
-
-✅ **Static Version:**  
-- HTML, CSS, JavaScript  
-- Multi-page navigation  
-- Styled layout and responsive design  
-- External links  
 
 ---
 ### [5. Dog Training Website](https://bark-base-website.vercel.app/)

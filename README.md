@@ -7,7 +7,7 @@ Welcome to my portfolio repository! This repository contains all my key projects
 ## Projects  
 
 
-### [1. Project 1: My personal website](https://www.alexanderw.dev/)
+### [1. Project 1: My own website](https://www.alexanderw.dev/)
 - **Description**: I built this to show I am capable of building modern efficient applications using frameworks like Next.js Check out the github and linkedIn links.
 - **Features**:
   - Created with Next.js
@@ -41,23 +41,13 @@ Welcome to my portfolio repository! This repository contains all my key projects
 
 
 ---
-### [5. Dog Training Website](https://bark-base-website.vercel.app/)
+### [4. Dog Training Website](https://bark-base-website.vercel.app/)
 - **Description**: A hypothetical dog training website built with **React** and **Material UI**. This project showcases a professional and user-friendly design for a dog training business.
 - **Features**:
   - Clean and responsive UI using **Material UI components**.
   - Pages for **Home, About, Services, Training, Testimonials, Gallery, and Contact**.
   - Reusable **React components** for consistency and maintainability.
   - Deployed using **Vercel** for fast and reliable hosting.
-
- ---
-### [6. Project 6: General Webpage for a website. ](https://al-jw.github.io/Portfolio/FinalProjectWebsite/Index.html)
-- **Description**: This project was a school assignment final project built using HTML, CSS, and Vanilla JavaScript, without any frameworks.
-- **Features**:
-  - Drop Down Navigation Bar.
-  - Headers and Footers.
-  - External links on a drop down with other early projects I've worked on. 
- 
-
 
 ## How to Clone and Run Locally
 If you'd like to explore these projects locally:

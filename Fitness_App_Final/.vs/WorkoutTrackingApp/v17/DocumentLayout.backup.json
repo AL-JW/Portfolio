@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "X:\\Portfolio\\Fitness_App_Final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\portfolio\\fitness_app_final\\workouttrackingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\portfolio\\fitness_app_final\\workouttrackingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\portfolio\\fitness_app_final\\workouttrackingapp\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\portfolio\\fitness_app_final\\workouttrackingapp\\data\\workouttrackingappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\data\\workouttrackingappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|x:\\portfolio\\fitness_app_final\\workouttrackingapp\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{979D7041-31A2-42FF-9E2D-C92A4BA5D1BA}|WorkoutTrackingApp\\WorkoutTrackingApp.csproj|solutionrelative:workouttrackingapp\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +26,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WorkoutTrackingAppContext.cs",
-              "DocumentMoniker": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\Data\\WorkoutTrackingAppContext.cs",
-              "RelativeDocumentMoniker": "WorkoutTrackingApp\\Data\\WorkoutTrackingAppContext.cs",
-              "ToolTip": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\Data\\WorkoutTrackingAppContext.cs",
-              "RelativeToolTip": "WorkoutTrackingApp\\Data\\WorkoutTrackingAppContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T22:14:06.676Z"
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\appsettings.json",
+              "RelativeDocumentMoniker": "WorkoutTrackingApp\\appsettings.json",
+              "ToolTip": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\appsettings.json",
+              "RelativeToolTip": "WorkoutTrackingApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAADBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-20T18:24:59.288Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\Data\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "WorkoutTrackingApp\\Data\\DbInitializer.cs",
-              "ToolTip": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\Data\\DbInitializer.cs",
-              "RelativeToolTip": "WorkoutTrackingApp\\Data\\DbInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T22:13:59.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\Program.cs",
               "RelativeDocumentMoniker": "WorkoutTrackingApp\\Program.cs",
               "ToolTip": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\Program.cs",
               "RelativeToolTip": "WorkoutTrackingApp\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T22:13:47.245Z",
+              "WhenOpened": "2025-02-20T18:24:56.868Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "README.txt",
-              "DocumentMoniker": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\README.txt",
-              "RelativeDocumentMoniker": "WorkoutTrackingApp\\README.txt",
-              "ToolTip": "X:\\Portfolio\\Fitness_App_Final\\WorkoutTrackingApp\\README.txt",
-              "RelativeToolTip": "WorkoutTrackingApp\\README.txt",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-13T23:19:27.043Z"
             }
           ]
         }
